@@ -13,7 +13,7 @@ defineProps({
 })
 </script>
 <template>
-    <NuxtLink :to="link">
+    <NuxtLink to="/media">
         <div class="mx-auto p-4 flex flex-col items-center w-20 md:w-28">
             <div class="w-20 md:w-28 h-24 md:h-32">
                 <img :src="image||'question.png'" class="mx-auto"  :alt="title">
