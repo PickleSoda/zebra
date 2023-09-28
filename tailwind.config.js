@@ -8,7 +8,12 @@ export default {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        zebraBackground: '#222222',
+        zebraBorder: '#8E6B8ECC'
+      },
+    },
   },
   plugins: [],
 }
