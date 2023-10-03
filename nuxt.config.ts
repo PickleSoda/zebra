@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://zebratbilisi.ge',
       siteName: 'Zebra Tbilisi',
       siteDescription: 'Welcome to Zebra tblisi!',
       language: 'en', // prefer more explicit language codes like `en-AU` over `en`

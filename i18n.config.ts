@@ -13,7 +13,9 @@ export default defineI18nConfig(() => ( {
       start:"PRESS START",
         directedbyzebra:"DIRECTED BY ZEBRA",
         videos:"VIDEOS",
-        pictures:"PICTURES"
+        pictures:"PICTURES",
+        back:"BACK",
+        getYourTickets:"GET YOUR TICKETS"
     },
     fr: {
       home: 'homefr',
