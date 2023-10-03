@@ -1,7 +1,7 @@
 export default defineI18nConfig(() => ( {
   fallbackLocale: 'en',
   messages: {
-    en: {
+    'en': {
       home: 'HOME',
       contact:"CONTACT",
       media:'MEDIA',
