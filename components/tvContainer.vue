@@ -3,32 +3,33 @@ defineProps({
     image:{
         type:String,
         required:true,
-    }
+    },
+    sm:Boolean
 })
 </script>
 <template>
        
-        <div class="max-w-4xl mx-auto" :style="{ backgroundImage: image }" style="
-width: 100%;
-height:90%; background-size: 100%;
+        <div :class="sm ? 'w-60 h-36 md:w-72 md:h-44 mx-auto ':'w-full h-screen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'" :style="{ backgroundImage: image }" style="
+ background-size: 100%;
 position: absolute;
 z-index: 0;
 pointer-events: none;
 object-fit:scale-down;
 background-repeat: no-repeat;
 ">
-     <div class="max-w-4xl" style="background-image: url('tvz.png');  width: 100%;
+     <div style="background-image: url('/tvz.png');  width: 100%;
                 height:100%; background-size: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: 0;
     pointer-events: none;
     object-fit:cover;
     background-repeat: no-repeat;
     overflow: visible;
     ">
-    <slot/>
+    <div class="absolute w-full h-full z-10">
+        <slot />
         </div>
-
-    </div>
-
+        </div>
+        </div>
+        
 </template>

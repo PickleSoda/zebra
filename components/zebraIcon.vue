@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link to="/">
+    <nuxt-link :to="localePath('/')">
     <svg class="max-w-4xl mx-auto" width="100%" height="100%" viewBox="0 0 808 180" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="ZEBRA CREATIVE AGENCY" filter="url(#filter0_bdi_1180_122)">
                     <path
