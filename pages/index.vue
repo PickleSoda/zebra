@@ -1,11 +1,15 @@
 <template>
   <div class="w-full">
-    <Header/>
-    <div class="absolute md:relative top-1/2 w-full md:h-80 my-auto flex items-center justify-center">
+    <Header />
+    <div class="absolute top-1/2 trasnform translate-y-1/2 left-1/2 trasnform -translate-x-1/2">
 
       <NuxtLink :to="localePath('home')" class="w-fit p-5 bg-zinc-700 text-white text-xl md:text-2xl center">
         {{ $t('start') }}
       </NuxtLink>
     </div>
   </div>
-  </template>
+  <div class="absolute bottom-4 left-1/2 trasnform -translate-x-1/2">
+
+    <zebra-footer />
+  </div>
+</template>

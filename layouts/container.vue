@@ -1,11 +1,13 @@
+
 <template>
-        <div class="w-full mx-auto max-w-5xl bg-zebraBackground pb-10">
-            <div class="mx-8 p-2 md:p-8 border-2 border-zebraBorder border-opacity-80 rounded-sm">
+        <div class="absolut top-1/2 transform translate-y-1/3 w-full z-10 mx-auto max-w-5xl bg-zebraBackground ">
+            <div class="mx-8 p-2 md:p-8 border-2 border-zebraBorder border-opacity-80 rounded-sm ">
                 <slot />
             </div>
-            <div class="mx-8 mt-8">
+            
+</div>
+<div class="relative bottom-20 transform translate-y-1/2 z-10 px-8 w-full max-w-5xl">
 
-                <slot name="footer"/>
-            </div>
+<slot name="footer"/>
 </div>
 </template>

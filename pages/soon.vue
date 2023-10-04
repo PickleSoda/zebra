@@ -1,6 +1,6 @@
 <script setup>
 // You might choose this based on an API call or logged-in status
-const layout = "tvz";
+const layout = "layoutTvz";
 </script>
 
 <template>

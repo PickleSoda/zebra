@@ -5,6 +5,11 @@ const layout = "container";
 
 <template>
   <div class="p-10">
+    <div class="absolute top-32 md:top-44 lg:top-20 left-10 translate-x-0 transform -translate-y-1/2 text-white">
+    <NuxtLink :to="localePath('/home')" class="w-fit p-3 lg:p-4  border-zebraBorder border-2 text-white text-xl md:text-2xl">
+            {{$t('home')}}    
+            </NuxtLink>
+            </div>
     <eventsIcon/>
   </div>
      <NuxtLayout :name="layout">
@@ -36,12 +41,12 @@ const layout = "container";
                 </tbody>
               </table>
         <template #footer>
-          <div class="flex flex-nowrap items-center justify-between">
+          <div class="flex flex-nowrap items-center justify-between mt-40">
             
-            <nuxt-link :to="localePath('/contact')" class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2">{{$t('contact')}}</nuxt-link>
-            <nuxt-link to='https://shop.zebratbilisi.com/' class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2">{{$t('getYourTickets')}}</nuxt-link>
+            <nuxt-link :to="localePath('/contact')" class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2 mb-10">{{$t('contact')}}</nuxt-link>
+            <nuxt-link to='https://shop.zebratbilisi.com/' class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2 mb-10">{{$t('getYourTickets')}}</nuxt-link>
           </div>
-          
+          <zebra-footer/>
         </template>
       </NuxtLayout>
 </template>

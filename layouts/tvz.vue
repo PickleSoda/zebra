@@ -24,7 +24,7 @@ window.history.length > 1 ? router.go(-1) : router.push(localePath('/home'))
 </div>
 
 <div class="lg:block absolute top-2/3 sm:top-3/4 md:bottom-40 lg:bottom-auto left-1/2 lg:top-20 lg:left-10 lg:translate-x-0 transform -translate-x-1/2 -translate-y-1/2 text-white">
-    <NuxtLink :to="localePath('/home')" class="w-fit p-5 bg-zinc-700 text-white text-xl md:text-2xl">
+    <NuxtLink :to="localePath('/home')" class="w-fit p-5  border-zebraBorder border-2 bg-zebraBackground text-white text-xl md:text-2xl">
             {{$t('home')}}    
             </NuxtLink>
             </div>

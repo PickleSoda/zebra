@@ -15,7 +15,9 @@ export default defineI18nConfig(() => ( {
         videos:"VIDEOS",
         pictures:"PICTURES",
         back:"BACK",
-        getYourTickets:"GET YOUR TICKETS"
+        getYourTickets:"GET YOUR TICKETS",
+        sendToZebra:"SEND TO ZEBRA",
+        sendToSupport:"SEND TO SUPPROT",
     },
     fr: {
       home: 'homefr',
