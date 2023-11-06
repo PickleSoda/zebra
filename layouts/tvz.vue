@@ -15,7 +15,7 @@ window.history.length > 1 ? router.go(-1) : router.push(localePath('/home'))
 </script>
 <template>
     
-    <div class="pt-10 absolute w-screen h-screen max-w-5xl  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div class="pt-10 absolute w-screen h-screen max-w-5xl  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black">
         <tvContainer :image="image">
             </tvContainer>
             </div>
