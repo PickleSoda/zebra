@@ -10,11 +10,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        zebraBackground: '#222222',
-        zebraBorder: '#8E6B8ECC'
+        zebraBackground: "#222222",
+        zebraBorder: "#8E6B8ECC",
       },
+      fontFamily: {
+        stalinist: ['"Stalinist One"', 'sans-serif'] // Ensure to give a fallback font
+      }
     },
   },
   plugins: [],
-}
-
+};
