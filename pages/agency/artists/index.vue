@@ -1,8 +1,8 @@
 <script setup>
 const nav = [
   { title: "WILL GATES", link: "/agency/artists/will-gates" },
-  { title: "ECONTACT", link: "/agency/artists/econtact" },
-  { title: "666UBA", link: "/agency/artists/666uba" },
+  { title: "ECONTAKT", link: "/agency/artists/econtakt" },
+  { title: "BUBA", link: "/agency/artists/buba" },
   { title: "DJ DELOREAN", link: "/agency/artists/dj-delorean" },
   { title: "E7EVEN", link: "/agency/artists/e7even" },
   { title: "1K", link: "/agency/artists/1k" },
