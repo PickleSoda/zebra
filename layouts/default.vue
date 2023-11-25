@@ -28,7 +28,7 @@ const route = useRoute();
 // Function to update background class based on route
 const updateBackgroundClass = (path) => {
     backgroundClass.value = path.includes('/media') ? 'media-background' :
-        backgroundClass.value = path.includes('/agency') ? 'agency-background'
+        backgroundClass.value = path.includes('/agency') ? backgroundClass.value = path.includes('/agency/artists') ? 'bg-zebraBackground': 'agency-background'
             : 'bg-zebraBackground';
 };
 

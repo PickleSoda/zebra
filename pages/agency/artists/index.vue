@@ -1,36 +1,41 @@
 <script setup>
-// You might choose this based on an API call or logged-in status
-const layout = "container";
 const nav = [
-  { title: "shop", image: "tee.png", link: 'https://shop.zebratbilisi.com/' },
-  { title: "events", image: "events.png", },
-  { title: "agency", image: "agency.png" },
-  { title: "contact", image: "contact.png" },
-  { title: "magazine", image: "magazine.png" },
-  { title: "about", image: "question.png" },
+  { title: "WILL GATES", link: "/agency/artists/will-gates" },
+  { title: "ECONTACT", link: "/agency/artists/econtact" },
+  { title: "666UBA", link: "/agency/artists/666uba" },
+  { title: "DJ DELOREAN", link: "/agency/artists/dj-delorean" },
+  { title: "E7EVEN", link: "/agency/artists/e7even" },
+  { title: "1K", link: "/agency/artists/1k" },
 ]
+const layout = "tvz";
 </script>
 
 <template>
-  <Header />
-
-  <div class="w-full z-20 lg:mb-16 ">
-    <NuxtLink :to="localePath('media')"
-      class="absolute w-60 h-36 lg:w-72 lg:h-44 mx-auto lg:right-20 lg:top-44 xl:right-0 xl:top-40 lg:translate-x-1/4  left-1/2 transform -translate-x-1/2">
-      <tvContainer sm
-        image="url('https://s3-alpha-sig.figma.com/img/ac5f/a27c/2afbd34d27201c98fecd88f8e0f39a1a?Expires=1696809600&Signature=ToUqahcT~oH3kB7W0KkOm4yBjLCO4JXmBlZ0paNjdN8niWIaX0i~HCg7nVaKmMWl5l092xDXsxVZTRsDumUyiD~KRn85gt5uql4X2gPTCUAE7xb3eiiyz66fdc4Rtkfzy-sb4LzQm6s2dTmVAZyEg0rcaNm5hOnWGhlIL6Ih4A9pHjXQluFfpxxR8JnO7yt61vzCARKag7BTSw-AVL39L2g5Nn4YvjM8P9iOD9~MrasfgO4CvYwo322N3kFRPSDh5Oj0dCAyAhBJ1AbjNbYbNseEL2zqs3XcTv6FL0kH3XwsHskRd5ELkAfsRG0IXbQQD2PxU5yrtslQK9hOXWIwcw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')">
-        <div class="w-full h-full flex items-center justify-center">
-          <h1 class="font-bold text-center p-4 bg-slate-400/70 max-w-min mx-auto text-white">{{ $t('media') }}</h1>
+  <NuxtLayout :name="layout"
+    image="url(' https://cdn.builder.io/api/v1/image/assets/TEMP/5f76eb0a-290b-4519-9e5a-0698f5c96ba2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600')">
+    <div class="py-20 px-10 md:px-40">
+      <div
+        class="w-full flex flex-col justify-center items-center gap-5 md:gap-4  bg-gray-600/40 rounded-xl border-gray-300/60 border p-3">
+        <h1 class="text-white font-bold  text-2xl md:text-3xl">ARTISTS</h1>
+        <div
+          class="w-full flex-col justify-center items-center gap-5 md:gap-4 rounded-lg border-gray-200/70 border p-3 mb-1 hidden md:flex">
+          <nuxt-link v-for="(item, index) in nav" :key="index" :to="localePath(item.link)"
+            class="text-white font-bold  text-lg md:text-2xl">
+            {{ item.title }}
+          </nuxt-link>
         </div>
-      </tvContainer>
-    </NuxtLink>
+      </div>
+      <div class="absolute top-1/2 -translate-y-1/3 left-0  w-full p-10">
 
-  </div>
+        <div
+          class="flex md:hidden flex-col justify-center items-center gap-5 md:gap-4 rounded-lg bg-gray-600/40 border-gray-200/70 border p-3 mb-1">
+          <nuxt-link v-for="(item, index) in nav" :key="index" :to="localePath(item.link)"
+            class="text-white font-bold  text-lg md:text-2xl">
+            {{ item.title }}
+          </nuxt-link>
+        </div>
 
-  <NuxtLayout :name="layout">
-
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-      <HomeNav class="mx-auto" v-for="navitem in nav" :key="navitem.title" :image="navitem.image" :title="navitem.title"
-        :link="navitem.link || localePath(navitem.title)" />
+      </div>
     </div>
-  </NuxtLayout></template>
+  </NuxtLayout>
+</template>
