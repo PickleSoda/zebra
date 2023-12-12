@@ -9,7 +9,8 @@
 
 
 <template>
-    <div :class="backgroundClass" class="w-full h-screen bg-zebraBackground font-mono">
+    <div :class="backgroundClass" class="w-full h-screen bg-zebraBackground font-mono filter-[url(#pixelate)] ">
+
         <langSwitcher />
         <div class="w-full mx-auto max-w-5xl">
             <slot />

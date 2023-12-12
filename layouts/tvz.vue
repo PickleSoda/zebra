@@ -27,7 +27,7 @@ const goTo = () => {
         <div
             class="lg:block absolute top-3/4 sm:top-3/4 md:bottom-40 lg:bottom-auto left-1/2 lg:top-20 lg:left-10 lg:translate-x-0 transform -translate-x-1/2 translate-y-1/2 text-white">
             <NuxtLink :to="localePath('/home')"
-                class="w-fit p-5  border-zebraBorder border-2 bg-zebraBackground text-white text-xl md:text-2xl">
+                class="w-fit p-5  border-zebraBorder border-2 s text-white text-xl md:text-2xl">
                 {{ $t('home') }}
             </NuxtLink>
         </div>

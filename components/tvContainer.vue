@@ -8,7 +8,7 @@ defineProps({
 })
 </script>
 <template>
-    <div :class="sm ? 'w-60 h-36 lg:w-72 lg:h-44 mx-auto ' : 'w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'"
+    <div :class="sm ? 'w-60 h-36' : 'w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'"
         :style="{ backgroundImage: image }" style="
  background-size: 100%;
 position: absolute;

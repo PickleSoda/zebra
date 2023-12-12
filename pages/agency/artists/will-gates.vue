@@ -7,10 +7,10 @@
         <Header />
         <div class="flex flex-col px-5 bg-green-60">
             <div
-                class="text-zinc-100 text-center text-[200px] font-bold leading-[210px] self-center max-w-[1301px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
+                class="text-zinc-100 text-center text-3xl font-bold leading-[100px] self-center max-w-[1301px] max-md:max-w-full max-md:text-xl max-md:leading-10">
                 WILL GATES
             </div>
-            <div class="self-stretch w-full -mr-5 mt-40 pr-8 max-md:max-w-full max-md:mt-10 max-md:pr-5">
+            <div class="self-stretch w-full -mr-5 mt-20 pr-8 max-md:max-w-full max-md:mt-10 max-md:pr-5">
                 <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                     <div class="flex flex-col items-stretch w-[44%] max-md:w-full max-md:ml-0">
                         <div
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div
-                class="text-white  text-5xl font-bold leading-[52px] max-w-[369px] ml-96 self-start max-md:text-4xl max-md:leading-10 max-md:ml-0 w-full text-center">
+                class="text-white  text-xl md:text-2xl font-bold leading-[52px] max-w-[369px] ml-96 self-start max-md:text-4xl max-md:leading-10 max-md:ml-0 w-full text-center">
                 BIO
             </div>
             <div
@@ -40,7 +40,7 @@
                     <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                         <div class="flex flex-col items-stretch w-[42%] max-md:w-full max-md:ml-0">
                             <div class="flex flex-col items-stretch max-md:max-w-full max-md:mt-10">
-                                <div class="text-white text-xl md:text-4xl font-bold leading-9 max-md:max-w-full">
+                                <div class="text-white text-md md:text-xl font-bold leading-9 max-md:max-w-full">
                                     <br />
                                     <ul>
                                         <li>
@@ -82,12 +82,12 @@
                                 </div>
                                 <img loading="lazy"
                                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5c65e799-ecee-456e-9e53-a72403ffb66a?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
-                                    class="aspect-[2.23] object-contain object-center w-[831px] overflow-hidden max-w-full ml-8 mt-20 self-start max-md:mt-10" />
+                                    class="aspect-[2.23] object-contain object-center w-[831px] overflow-hidden max-w-full self-start max-md:mt-10" />
                             </div>
                         </div>
                         <div class="flex flex-col items-stretch w-[58%] ml-5 max-md:w-full max-md:ml-0">
-                            <div class="flex grow flex-col items-stretch mt-24 max-md:max-w-full max-md:mt-10">
-                                <div class="text-pink-500 text-4xl font-bold leading-10 max-md:max-w-full">
+                            <div class="flex grow flex-col items-stretch max-md:max-w-full max-md:mt-10">
+                                <div class="text-pink-500 text-md md:text-xl font-bold leading-10 max-md:max-w-full">
                                     <span class="text-white">Location: Tbilisi. GE<br />Performance: DJ set /
                                         LIVE<br />Genres:
                                         Techno, Dub, Ambient, Electro, House<br /><br />Booking agent: </span><span
@@ -130,13 +130,13 @@
                         <div class="flex flex-col items-stretch w-[43%] max-md:w-full max-md:ml-0">
                             <div class="flex grow flex-col items-center max-md:max-w-full max-md:mt-10">
                                 <div
-                                    class="text-white text-center text-4xl font-bold leading-9 self-stretch max-md:max-w-full">
+                                    class="text-white text-center text-md md:text-xl font-bold leading-9 self-stretch max-md:max-w-full">
                                     PREMIERE: WILL GATES DELIVERS AN IRRESISTIBLE HOUSE<br /><br />GROOVE
                                     ‘4 THA HATERZ’<br /><br />With dusty atmospherics and gripping
                                     rhythm<br /><br />HARRISON WILLIAMS<br />20 JULY 2017
                                 </div>
                                 <div
-                                    class="text-fuchsia-400 text-center text-4xl font-bold leading-9 self-stretch max-md:max-w-full">
+                                    class="text-fuchsia-400 text-center text-md md:text-xl font-bold leading-9 self-stretch max-md:max-w-full">
                                     <p>
                                         Link:
                                         <a
@@ -145,105 +145,25 @@
 
                                     </p>
                                 </div>
-                                <div
-                                    class="text-white text-5xl font-bold leading-[52px] mt-24 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
-                                    TECHNICAL & HOSIPTALITY RIDER
-                                </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-stretch w-[37%] ml-5 max-md:w-full max-md:ml-0">
+                        <div class="flex flex-col items-top w-1/3 ml-5 max-md:w-full max-md:ml-0">
                             <img loading="lazy"
                                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/681709ca-8e7a-4ac1-a1d4-37503aafe110?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
-                                class="aspect-[1.79] object-contain object-center w-full overflow-hidden grow mt-32 max-md:max-w-full max-md:mt-10" />
+                                class="aspect-[1.79] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10" />
                         </div>
                         <div class="flex flex-col items-stretch w-1/5 ml-5 max-md:w-full max-md:ml-0">
                             <img loading="lazy"
                                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/c83226f0-169a-491a-bd0d-9a042fc34781?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
-                                class="aspect-square object-contain object-center w-full overflow-hidden mt-28 max-md:max-w-full max-md:mt-10" />
+                                class="aspect-square object-contain object-center w-full overflow-hidden max-md:max-w-full max-md:mt-10" />
                         </div>
                     </div>
                 </div>
             </div>
             <div class="self-stretch w-full -mr-5 mt-20 max-md:max-w-full max-md:mt-10">
                 <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                    <div class="flex flex-col items-stretch w-[43%] max-md:w-full max-md:ml-0">
+                    <div class="flex flex-col items-stretch w-[43%] max-md:w-full max-md:ml-0 md:-mt-40">
                         <div class="text-white text-4xl font-bold leading-9 mt-7 max-md:max-w-full max-md:mt-10">
-                            <br />
-                            <ul>
-                                <li>
-                                    High quality professional DJ mixer (in order of preference):
-                                    Formula 1, Alpha Recording System, E&amp;S DJR 400, Allen &amp;
-                                    Heath Xone 92.
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    High quality professional full range monitor speakers,
-                                    positioned left and right from the artist, head height and
-                                    controllable via the artist’s mixer.
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    Technics SL1200/1210 MK2 turntables in great condition with
-                                    Ortofon, Shure or Stanton needles and elements. Signal and
-                                    needles must be checked (and room tuned for feedback) properly
-                                    by a professional sound technician prior to the start of the
-                                    event. Please make a sure you have at least two needles and
-                                    elements (Ortofon, Shure, Stanton) as a backup in case of
-                                    malfunction.
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    Pioneer CDJ 2000 Nexus or Pioneer CDJ 2000 Nexus 2 updated with
-                                    the latest firmware. Make sure they are linked and USB and SD
-                                    ports work properly. Please make sure you have at least one
-                                    Pioneer CDJ 2000 Nexus or Pioneer CDJ 2000 Nexus 2 available as
-                                    a back-up in case of malfunction during the night.
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    Important: Please make sure the booth lay-out is as follow (if
-                                    no CDJ stands are available): CDJ | Turntable | Mixer |
-                                    Turntable | CDJ
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>1 engineer taking care of the PA.</li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    The DJ booth must be of solid construction and proven to be free
-                                    from the vibrations and ratting at maximum PA Volume. The artist
-                                    will need 1 Secured room (to lock) for Jacket,Bag, etc.
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>Bottles of sparkling water, drinks on request.</li>
-                                <ul>
-                                    <br />
-                                </ul>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-stretch w-[57%] ml-5 max-md:w-full max-md:ml-0">
-                        <div class="flex grow flex-col items-center max-md:max-w-full max-md:mt-10">
-                            <div class="self-stretch max-md:max-w-full">
-                                <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                                    <div class="flex flex-col items-stretch w-[66%] max-md:w-full max-md:ml-0">
-                                        <img loading="lazy"
-                                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
-                                            class="aspect-[1.81] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10" />
-                                    </div>
-                                    <div class="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0">
-                                        <img loading="lazy"
-                                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
-                                            class="aspect-square object-contain object-center w-full overflow-hidden max-md:max-w-full max-md:mt-10" />
-                                    </div>
-                                </div>
-                            </div>
                             <div class="self-stretch mt-32 pr-1.5 max-md:max-w-full max-md:mt-10">
                                 <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                                     <div class="flex flex-col items-stretch w-[66%] max-md:w-full max-md:ml-0">
@@ -274,11 +194,30 @@
                             </div>
                         </div>
                     </div>
+                    <div class="flex flex-col items-stretch w-[57%] ml-5 max-md:w-full max-md:ml-0">
+                        <div class="flex grow flex-col items-center max-md:max-w-full ">
+                            <div class="self-stretch max-md:max-w-full">
+                                <div class="flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+                                    <div class="flex flex-col items-stretch w-[66%] max-md:w-full max-md:ml-0">
+                                        <img loading="lazy"
+                                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/7beb65f9-f8f6-40fe-86ad-293c976af768?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
+                                            class="aspect-[1.81] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10" />
+                                    </div>
+                                    <div class="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0">
+                                        <img loading="lazy"
+                                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/93378031-bb1b-48cf-95de-085167252b16?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
+                                            class="aspect-square object-contain object-center w-full overflow-hidden max-md:max-w-full max-md:mt-10" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div
-            class="text-white text-center text-xl md:text-4xl font-bold leading-[63px] mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
+            class="text-white text-center text-md md:text-xl font-bold leading-[63px] mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
             © 2023 ZEBRA <br />Terms and Conditions<br />Privacy Policy
     </div>
 </div></template>

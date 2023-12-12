@@ -25,10 +25,10 @@ const layout = "tvz";
           </nuxt-link>
         </div>
       </div>
-      <div class="absolute top-1/2 -translate-y-1/3 left-0  w-full p-10">
+      <div class="absolute md:hidden top-1/2 -translate-y-1/3 left-0  w-full p-10">
 
         <div
-          class="flex md:hidden flex-col justify-center items-center gap-5 md:gap-4 rounded-lg bg-gray-600/40 border-gray-200/70 border p-3 mb-1">
+          class="flex  flex-col justify-center items-center gap-5 md:gap-4 rounded-lg bg-gray-600/40 border-gray-200/70 border p-3 mb-1">
           <nuxt-link v-for="(item, index) in nav" :key="index" :to="localePath(item.link)"
             class="text-white font-bold  text-lg md:text-2xl">
             {{ item.title }}

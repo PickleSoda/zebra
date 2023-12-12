@@ -1,7 +1,7 @@
 
 <template>
-    <div class="absolut top-1/2 transform translate-y-1/3 w-full z-10 mx-auto max-w-5xl bg-zebraBackground ">
-        <div class="mx-8 p-2 md:p-8 border-2 border-zebraBorder border-opacity-80 rounded-sm ">
+    <div class="absolut top-1/2 transform translate-y-1/3 w-full z-10 mx-auto max-w-5xl bg-zebraBackground md:pt-10">
+        <div class="mx-8 p-2 md:p-8 border-4 border-zebraBorder border-opacity-80 rounded-sm ">
             <slot />
         </div>
 

@@ -10,6 +10,5 @@
   </div>
   <div class="absolute bottom-4 left-1/2 trasnform -translate-x-1/2">
 
-    <zebra-footer />
   </div>
 </template>

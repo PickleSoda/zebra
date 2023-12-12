@@ -12,7 +12,7 @@ const layout = "container";
     <div class="absolut top-1/2 pt-10 w-full z-10 mx-auto max-w-5xl bg-zebraBackground pb-10">
         <div class="mx-8 p-2 md:p-8 border-2 border-zebraBorder border-opacity-80 rounded-sm">
             <h1 class="text-5xl text-white text-center pb-6 ">
-                contact
+                {{ $t('contact') }}
             </h1>
             <div class="flex flex-col gap-3">
                 <input type="text" class="bg-zebraBackground border-2 border-zebraBorder p-2 text-white"

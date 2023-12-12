@@ -17,9 +17,9 @@ const layout = "container";
     <table class="table-auto w-full text-white font-base">
       <thead>
         <tr>
-          <th class="text-white">Upcomming Events:</th>
-          <th class="text-white">Location:</th>
-          <th class="text-white">Date:</th>
+          <th class="text-white">{{ $t('upcomingEvents') }}:</th>
+          <th class="text-white">{{ $t('location') }}:</th>
+          <th class="text-white">{{ $t('date') }}:</th>
         </tr>
       </thead>
       <tbody>

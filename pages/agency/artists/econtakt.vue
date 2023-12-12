@@ -3,10 +3,10 @@
     <Header />
     <div class="flex flex-col items-center px-5">
       <div
-        class="text-zinc-100 text-center text-[200px] font-bold leading-[210px] max-w-[1124px] max-md:max-w-full max-md:text-4xl max-md:leading-10 max-w-3xl">
+        class="text-zinc-100 text-center text-3xl font-bold leading-[100px] max-w-[1124px] max-md:max-w-full max-md:text-xl max-md:leading-10 max-w-xl">
         ECONTAKT
       </div>
-      <div class="self-stretch w-full -mr-5 mt-44 pr-7 max-md:max-w-full max-md:mt-10 max-md:pr-5">
+      <div class="self-stretch w-full -mr-5 mt-20 pr-7 max-md:max-w-full max-md:mt-10 max-md:pr-5">
         <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div class="flex flex-col items-stretch w-[47%] max-md:w-full max-md:ml-0">
             <div
@@ -26,7 +26,7 @@
           <div class="flex flex-col items-stretch w-[27%] ml-5 max-md:w-full max-md:ml-0">
             <img loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/52738750-0924-4415-90be-fb175c0c48c2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
-              class="aspect-[1.02] object-contain object-center w-full overflow-hidden grow mt-36 max-md:max-w-full max-md:mt-10" />
+              class="aspect-[1.02] object-contain object-center w-full overflow-hidden grow mt-26 max-md:max-w-full max-md:mt-10" />
           </div>
         </div>
       </div>
@@ -35,14 +35,14 @@
           <div class="flex flex-col items-stretch w-[46%] max-md:w-full max-md:ml-0">
             <div class="flex flex-col items-center max-md:max-w-full max-md:mt-10">
               <div
-                class="text-white text-5xl font-bold leading-[52px] ml-0 max-w-[369px] max-md:text-4xl max-md:leading-10">
+                class="text-white text-lg md:text-2xl font-bold leading-[52px] ml-0 max-w-[369px] max-md:text-4xl max-md:leading-10">
                 BIO
               </div>
               <div
                 class="self-stretch flex flex-col items-stretch mt-32 pl-7 pr-20 max-md:max-w-full max-md:mt-10 max-md:px-5">
-                <div class="text-white text-4xl font-bold leading-9 max-w-[1018px] mr-5 max-md:max-w-full max-md:mr-2.5">
+                <div class="text-white text-md md:text-2xl font-bold leading-9 max-w-[1018px] mr-5 max-md:max-w-full max-md:mr-2.5">
                   <ul>
-                    <li>
+                    <li class="p-4">
                       Econtakt, also known by his real name Jay Sebua, is a
                       vibrant force in the Georgian electronic music scene,
                       captivating audiences with his unique blend of electro and
@@ -50,8 +50,8 @@
                       Econtact quickly established himself as a prominent DJ and
                       producer, leaving an indelible mark on the industry.
                     </li>
-                    <li></li>
-                    <li>
+                    <li class="p-4">
+
                       Influenced by a childhood immersed in diverse musical genres
                       like electro, trap, and hip-hop, Econtact's passion for
                       music ignited early on. The mesmerizing allure of lo-fi
@@ -59,8 +59,8 @@
                       these genres became a wellspring of inspiration, shaping his
                       distinctive sound and propelling his musical journey.
                     </li>
-                    <li></li>
-                    <li>
+                    <li class="p-4">
+
                       Focusing on ambient, electro, and dub, Pulsar Pulse's
                       performances are a sonic journey, transporting audiences to
                       ethereal landscapes through carefully curated sounds and
@@ -70,77 +70,14 @@
                     </li>
                   </ul>
                 </div>
-                <div
-                  class="text-white text-5xl font-bold leading-[52px] self-center max-w-[1008px] -ml-9 mt-40 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
-                  TECHNICAL & HOSIPTALITY RIDER
-                </div>
               </div>
               <div class="text-white text-4xl font-bold leading-9 self-stretch mt-40 max-md:max-w-full max-md:mt-10">
-                <br />
-                <ul>
-                  <li>
-                    High quality professional DJ mixer (in order of preference):
-                    Formula 1, Alpha Recording System, E&amp;S DJR 400, Allen
-                    &amp; Heath Xone 92.
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    High quality professional full range monitor speakers,
-                    positioned left and right from the artist, head height and
-                    controllable via the artist’s mixer.
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    Technics SL1200/1210 MK2 turntables in great condition with
-                    Ortofon, Shure or Stanton needles and elements. Signal and
-                    needles must be checked (and room tuned for feedback) properly
-                    by a professional sound technician prior to the start of the
-                    event. Please make a sure you have at least two needles and
-                    elements (Ortofon, Shure, Stanton) as a backup in case of
-                    malfunction.
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    Pioneer CDJ 2000 Nexus or Pioneer CDJ 2000 Nexus 2 updated
-                    with the latest firmware. Make sure they are linked and USB
-                    and SD ports work properly. Please make sure you have at least
-                    one Pioneer CDJ 2000 Nexus or Pioneer CDJ 2000 Nexus 2
-                    available as a back-up in case of malfunction during the
-                    night.
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    Important: Please make sure the booth lay-out is as follow (if
-                    no CDJ stands are available): CDJ | Turntable | Mixer |
-                    Turntable | CDJ
-                  </li>
-                </ul>
-                <ul>
-                  <li>1 engineer taking care of the PA.</li>
-                </ul>
-                <ul>
-                  <li>
-                    The DJ booth must be of solid construction and proven to be
-                    free from the vibrations and ratting at maximum PA Volume. The
-                    artist will need 1 Secured room (to lock) for Jacket,Bag, etc.
-                  </li>
-                </ul>
-                <ul>
-                  <li>Bottles of sparkling water, drinks on request.</li>
-                  <ul>
-                    <br />
-                  </ul>
-                </ul>
-              </div>
-            </div>
+                </div>
+                </div>
           </div>
           <div class="flex flex-col items-stretch w-[54%] ml-5 max-md:w-full max-md:ml-0">
-            <div class="flex grow flex-col items-stretch mt-36 max-md:max-w-full max-md:mt-10">
-              <div class="text-red-400 text-4xl font-bold leading-10 max-md:max-w-full">
+            <div class="flex grow flex-col items-stretch mt-26 max-md:max-w-full max-md:mt-10">
+              <div class="text-red-400 text-lg md:text-2xl font-bold leading-10 max-md:max-w-full">
                 <span class="text-white">Location: Tbilisi. GE<br />Performance: DJ set / LIVE<br />Genres:
                   Techno, Dub, Ambient, Electro, House<br /><br />Booking agent: </span><span
                   class="text-red-400">BOOKINGSZEBRA@EUROPE.COM</span>
@@ -159,7 +96,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-36 pr-8 max-md:max-w-full max-md:mt-10 max-md:pr-5">
+              <div class=" pr-8 max-md:max-w-full max-md:mt-10 max-md:pr-5">
                 <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                   <div class="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
                     <img loading="lazy"
@@ -173,7 +110,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-36 pr-7 max-md:max-w-full max-md:mt-10 max-md:pr-5">
+              <div class=" pr-7 max-md:max-w-full max-md:mt-10 max-md:pr-5 2xl:hidden">
                 <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                   <div class="flex flex-col items-stretch w-[51%] max-md:w-full max-md:ml-0">
                     <img loading="lazy"
@@ -193,7 +130,7 @@
       </div>
     </div>
     <div
-      class="text-white text-center text-xl md:text-4xl font-bold leading-[63px] mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
+      class="text-white text-center text-xl md:text-2xl font-bold leading-[63px] mt-32 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
       © 2023 ZEBRA <br />Terms and Conditions<br />Privacy Policy
     </div>
   </div>

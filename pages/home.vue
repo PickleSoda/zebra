@@ -16,7 +16,7 @@ const nav = [
 
   <div class="w-full z-20 lg:mb-16 ">
     <NuxtLink :to="localePath('media')"
-      class="absolute w-60 h-36 lg:w-72 lg:h-44 mx-auto lg:right-20 lg:top-44 xl:right-0 xl:top-40 lg:translate-x-1/4  left-1/2 transform -translate-x-1/2">
+      class="absolute w-60 h-36  mx-auto   right-1/2 transform translate-x-1/2">
       <tvContainer sm image="url('/main.gif')">
         <div class="w-full h-full flex items-center justify-center">
           <h1 class="font-bold text-center p-4  max-w-min mx-auto text-white">{{ $t('media') }}</h1>
@@ -33,4 +33,7 @@ const nav = [
         :link="navitem.link || localePath(navitem.title)" />
     </div>
   </NuxtLayout>
+
+  <zebra-footer />
+
 </template>

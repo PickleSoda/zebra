@@ -3,7 +3,7 @@
     <Header />
     <div class="flex flex-col items-center px-5">
       <div
-        class="text-zinc-100 text-center text-[200px] mt-24 font-bold leading-[210px] max-w-[2170px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
+        class="text-zinc-100 text-center text-4xl mt-24 font-bold leading-[210px] max-w-[2170px] max-md:max-w-full max-md:text-2xl max-md:leading-10">
         E7EVEN
       </div>
       <div class="self-stretch w-full -mr-5  pr-2.5 max-md:max-w-full max-md:mt-10">
@@ -41,7 +41,7 @@
         <div class="ml-3.5 mr-3.5 max-md:max-w-full max-md:mr-2.5">
           <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
             <div class="flex flex-col items-stretch w-[55%] max-md:w-full max-md:ml-0">
-              <div class="text-white text-xl md:text-4xl font-bold leading-9 max-md:max-w-full max-md:mt-10">
+              <div class="text-white text-md md:text-xl font-bold leading-9 max-md:max-w-full max-md:mt-10">
                 <br />
                 <ul>
                   <li>
@@ -76,7 +76,7 @@
               </div>
             </div>
             <div class="flex flex-col items-stretch w-[45%] ml-5 max-md:w-full max-md:ml-0">
-              <div class="text-fuchsia-300 text-xl md:text-4xl font-bold leading-10 mt-6 max-md:max-w-full max-md:mt-10">
+              <div class="text-fuchsia-300 text-lg md:text-2xl font-bold leading-10 mt-6 max-md:max-w-full max-md:mt-10">
                 <span class="text-white">Location: BERLIN. GERMANY<br />Performance: DJ set / LIVE<br />Genres:
                   Techno, Dub, Ambient, Electro, House<br /><br />Booking agent: </span><span
                   class="text-fuchsia-300">@zebratbilisi.com</span>
@@ -84,73 +84,14 @@
             </div>
           </div>
         </div>
-        <div
-          class="text-white text-5xl font-bold leading-[52px] max-w-[1008px] ml-14 mt-44 self-start max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
-          TECHNICAL & HOSIPTALITY RIDER
-        </div>
       </div>
       <div
         class="text-white text-xl md:text-4xl font-bold leading-9 self-stretch w-full -mr-5 mt-28 max-md:max-w-full max-md:mt-10">
-        <br />
-        <ul>
-          <li>
-            High quality professional DJ mixer (in order of preference): Formula
-            1, Alpha Recording System, E&amp;S DJR 400, Allen &amp; Heath Xone 92.
-          </li>
-        </ul>
-        <ul>
-          <li>
-            High quality professional full range monitor speakers, positioned left
-            and right from the artist, head height and controllable via the
-            artist’s mixer.
-          </li>
-        </ul>
-        <ul>
-          <li>
-            Technics SL1200/1210 MK2 turntables in great condition with Ortofon,
-            Shure or Stanton needles and elements. Signal and needles must be
-            checked (and room tuned for feedback) properly by a professional sound
-            technician prior to the start of the event. Please make a sure you
-            have at least two needles and elements (Ortofon, Shure, Stanton) as a
-            backup in case of malfunction.
-          </li>
-        </ul>
-        <ul>
-          <li>
-            Pioneer CDJ 2000 Nexus or Pioneer CDJ 2000 Nexus 2 updated with the
-            latest firmware. Make sure they are linked and USB and SD ports work
-            properly. Please make sure you have at least one Pioneer CDJ 2000
-            Nexus or Pioneer CDJ 2000 Nexus 2 available as a back-up in case of
-            malfunction during the night.
-          </li>
-        </ul>
-        <ul>
-          <li>
-            Important: Please make sure the booth lay-out is as follow (if no CDJ
-            stands are available): CDJ | Turntable | Mixer | Turntable | CDJ
-          </li>
-        </ul>
-        <ul>
-          <li>1 engineer taking care of the PA.</li>
-        </ul>
-        <ul>
-          <li>
-            The DJ booth must be of solid construction and proven to be free from
-            the vibrations and ratting at maximum PA Volume. The artist will need
-            1 Secured room (to lock) for Jacket,Bag, etc.
-          </li>
-        </ul>
-        <ul>
-          <li>Bottles of sparkling water, drinks on request.</li>
-          <ul>
-            <br />
-          </ul>
-        </ul>
       </div>
 
     </div>
     <div
-      class="text-white text-center text-xl md:text-4xl font-bold leading-[63px] mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
+      class="text-white text-center text-xl md:text-2xl font-bold leading-[63px] mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
       © 2023 ZEBRA <br />Terms and Conditions<br />Privacy Policy
     </div>
   </div>

@@ -3,14 +3,14 @@
         <Header />
         <div class="flex flex-col items-center px-5">
             <div
-                class="text-zinc-100 text-center text-[200px] font-bold leading-[210px] max-w-[2170px] mt-28 max-md:max-w-full max-md:text-4xl max-md:leading-10">
+                class="text-zinc-100 text-center text-3xl font-bold leading-[100px] max-w-[2170px] mt-8 max-md:max-w-full max-md:text-xl max-md:leading-10">
                 DJ DELOREAN (TES)
             </div>
-            <div class="self-stretch w-full -mr-5 md:mt-48 pr-1 max-md:max-w-full max-md:mt-10">
+            <div class="self-stretch w-full -mr-5 md:mt-28 pr-1 max-md:max-w-full max-md:mt-10">
                 <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                     <div class="flex flex-col items-stretch w-[49%] max-md:w-full max-md:ml-0">
                         <div
-                            class="flex-col shadow-md overflow-hidden relative flex min-h-[836px] grow items-center px-5 py-12 max-md:max-w-full max-md:mt-6">
+                            class="flex-col shadow-md overflow-hidden relative flex min-h-[536px] grow items-center px-5 py-12 max-md:max-w-full max-md:mt-6">
                             <img loading="lazy"
                                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/4f326a48-4729-4538-99c1-fbee66f907f0?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
                                 class="absolute z-[-1] h-full w-full object-cover object-center inset-0" /><img
@@ -36,11 +36,11 @@
                     <div class="flex flex-col items-stretch w-[47%] max-md:w-full max-md:ml-0">
                         <div class="flex grow flex-col max-md:max-w-full max-md:mt-10">
                             <div
-                                class="text-white text-6xl font-bold leading-[63px] self-center max-w-[369px] max-md:text-4xl max-md:leading-10">
+                                class="text-white text-4__xl md:text-2xl font-bold leading-[63px] self-center max-w-[369px] max-md:text-xl max-md:leading-10">
                                 BIO
                             </div>
                             <div
-                                class="text-white text-5xl font-bold leading-10 self-stretch mt-24 max-md:max-w-full max-md:mt-10">
+                                class="text-white md:text-xl text-md font-bold leading-10 self-stretch mt-24 max-md:max-w-full max-md:mt-10">
                                 <br />
                                 <ul>
                                     <li>
@@ -61,85 +61,23 @@
                             </div>
                             <div class="self-center flex w-[961px] max-w-full pr-0 flex-col mt-20 max-md:mt-10">
                                 <div
-                                    class="text-white text-6xl font-bold leading-[63px] self-center max-w-[369px] max-md:text-4xl max-md:leading-10">
+                                    class="text-white text-4xl font-bold leading-[63px] self-center max-w-[369px] max-md:text-4xl max-md:leading-10">
                                     PRESS
                                 </div>
                                 <img loading="lazy"
                                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/c6cc11df-93ea-4fd9-ad22-39de1300a03d?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
                                     class="aspect-[1.56] object-contain object-center w-[698px] overflow-hidden self-center max-w-full mt-16 max-md:mt-10" />
                                 <div
-                                    class="text-white text-center text-xl md:text-4xl font-bold leading-9 self-stretch mt-16 max-md:max-w-full max-md:mt-10">
+                                    class="text-white text-center text-lg md:text-xl font-bold leading-9 self-stretch mt-16 max-md:max-w-full max-md:mt-10">
                                     “RESIDENT DJ OF TES CLUB, DJ DELOREAN CATCHES THE LISTENER’S
                                     ATTENTION WITH HIS FINELY CRAFTED PRODUCTION & MIXING, BRINGING
                                     FORWARD AN EXEMPLARY INFUSION OF HOUSE, TECHNO, AND BREAKBEAT.
                                     WITH A HEAVY FOCUS ON DRUMS AND SAMPLING”
                                 </div>
                                 <div
-                                    class="text-fuchsia-400 text-center text-xl md:text-4xl font-bold leading-9 self-center mt-20 max-md:max-w-full max-md:mt-10">
+                                    class="text-fuchsia-400 text-center text-lg md:text-xl font-bold leading-9 self-center mt-20 max-md:max-w-full max-md:mt-10">
                                     LINK: HTTPS://RA.CO/DJ/DJDELOREAN/BIOGRAPHY
                                 </div>
-                                <div
-                                    class="text-white text-6xl font-bold leading-[58px] max-w-[1008px] ml-3.5 mt-28 self-start max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
-                                    TECHNICAL & HOSIPTALITY RIDER
-                                </div>
-                            </div>
-                            <div
-                                class="text-white text-xl md:text-4xl font-bold leading-10 self-stretch mt-24 max-md:max-w-full max-md:mt-10">
-                                <ul>
-                                    <li>
-                                        HIGH QUALITY PROFESSIONAL DJ MIXER (IN ORDER OF PREFERENCE):
-                                        FORMULA 1, ALPHA RECORDING SYSTEM, E&amp;S DJR 400, ALLEN
-                                        &amp; HEATH XONE 92.
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        HIGH QUALITY PROFESSIONAL FULL RANGE MONITOR SPEAKERS,
-                                        POSITIONED LEFT AND RIGHT FROM THE ARTIST, HEAD HEIGHT AND
-                                        CONTROLLABLE VIA THE ARTIST’S MIXER.
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        TECHNICS SL1200/1210 MK2 TURNTABLES IN GREAT CONDITION WITH
-                                        ORTOFON, SHURE OR STANTON NEEDLES AND ELEMENTS. SIGNAL AND
-                                        NEEDLES MUST BE CHECKED (AND ROOM TUNED FOR FEEDBACK) PROPERLY
-                                        BY A PROFESSIONAL SOUND TECHNICIAN PRIOR TO THE START OF THE
-                                        EVENT. PLEASE MAKE A SURE YOU HAVE AT LEAST TWO NEEDLES AND
-                                        ELEMENTS (ORTOFON, SHURE, STANTON) AS A BACKUP IN CASE OF
-                                        MALFUNCTION.
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        PIONEER CDJ 2000 NEXUS OR PIONEER CDJ 2000 NEXUS 2 UPDATED
-                                        WITH THE LATEST FIRMWARE. MAKE SURE THEY ARE LINKED AND USB
-                                        AND SD PORTS WORK PROPERLY. PLEASE MAKE SURE YOU HAVE AT LEAST
-                                        ONE PIONEER CDJ 2000 NEXUS OR PIONEER CDJ 2000 NEXUS 2
-                                        AVAILABLE AS A BACK-UP IN CASE OF MALFUNCTION DURING THE
-                                        NIGHT.
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        IMPORTANT: PLEASE MAKE SURE THE BOOTH LAY-OUT IS AS FOLLOW (IF
-                                        NO CDJ STANDS ARE AVAILABLE): CDJ | TURNTABLE | MIXER |
-                                        TURNTABLE | CDJ
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>1 ENGINEER TAKING CARE OF THE PA.</li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        THE DJ BOOTH MUST BE OF SOLID CONSTRUCTION AND PROVEN TO BE
-                                        FREE FROM THE VIBRATIONS AND RATTING AT MAXIMUM PA VOLUME. THE
-                                        ARTIST WILL NEED 1 SECURED ROOM (TO LOCK) FOR JACKET,BAG, ETC.
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>BOTTLES OF SPARKLING WATER, DRINKS ON REQUEST.</li>
-                                </ul>
                             </div>
                             <img loading="lazy"
                                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/21813c8b-b02b-4f6f-a418-e7def5893e76?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&"
@@ -189,9 +127,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-stretch w-[53%] ml-5 max-md:w-full max-md:ml-0">
-                        <div class="flex flex-col items-stretch mt-28 max-md:max-w-full max-md:mt-10">
+                        <div class="flex flex-col items-stretch mt-18 max-md:max-w-full max-md:mt-10">
                             <div
-                                class="text-fuchsia-300 text-6xl font-bold leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
+                                class="text-fuchsia-300 text-lg md:text-xl font-bold leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
                                 <span class="text-white">LOCATION: TBILISI. GE<br />PERFORMANCE: DJ SET / LIVE<br />GENRES:
                                     HOUSE, TECHNO, BREAKBEAT<br /><br />BOOKING AGENT: </span><span
                                     class="text-fuchsia-300">CONTACT@TES-CLUB.COM</span>
@@ -289,7 +227,7 @@
             </div>
         </div>
         <div
-            class="text-white text-center text-xl md:text-4xl font-bold leading-[63px] mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-10 max-md:mt-10">
+            class="text-white text-center text-xl md:text-2xl font-bold leading-[63px] mt-4 max-md:max-w-full max-md:text-xl max-md:leading-10 max-md:mt-10">
             © 2023 ZEBRA <br />Terms and Conditions<br />Privacy Policy
         </div>
     </div>
