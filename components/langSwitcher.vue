@@ -25,8 +25,9 @@ const toggleLangSwitcher = () =>{
       </button>
     </div>
 
+   
     <div v-if="langSwitcher" class="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 bg-zebraBackground " @click="toggleLangSwitcher">
-      <div class="py-1 flex flex-col" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+      <div class="py-1 flex flex-col z-10" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
         <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)" class="p-3 hover:bg-slate-700">{{
       locale.name 
     }}</NuxtLink>
@@ -34,4 +35,9 @@ const toggleLangSwitcher = () =>{
     </div>
   </div>
   </div>
+  <div
+      v-if="langSwitcher"
+      class="absolute top-0 bottom-0 left-0 right-0 w-full h-screen z-10"
+      @click="toggleLangSwitcher"
+    ></div>
 </template>

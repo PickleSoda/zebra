@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full pt-10">
     <Header />
     <div class="absolute top-1/2 trasnform translate-y-1/2 left-1/2 trasnform -translate-x-1/2">
 
