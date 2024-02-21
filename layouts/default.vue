@@ -13,19 +13,29 @@
     :class="backgroundClass"
     class="w-full h-screen bg-zebraBackground font-mono filter-[url(#pixelate)] "
   >
-  <LangSwitcher />
+    <LangSwitcher />
     <VolumeSwitcher />
     <div class="w-full mx-auto max-w-5xl">
       <slot />
     </div>
 
-    <audio id="sound-1" :src="bomboclatSound" />
-    <audio id="sound-2" :src="classicHurtSound" />
-    <audio id="sound-3" :src="gtaSanAndreasSound" />
-    <audio id="sound-4" :src="plug" />
-    
+    <audio
+      id="sound-1"
+      :src="bomboclatSound"
+    />
+    <audio
+      id="sound-2"
+      :src="classicHurtSound"
+    />
+    <audio
+      id="sound-3"
+      :src="gtaSanAndreasSound"
+    />
+    <audio
+      id="sound-4"
+      :src="plug"
+    />
   </div>
-
 </template>
   
 <script setup>
