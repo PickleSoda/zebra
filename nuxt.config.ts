@@ -20,11 +20,12 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         // Include the Stalinist One font
         { href: 'https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap', rel: 'stylesheet' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ],
       // ... other head elements like meta tags
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", '@pinia/nuxt',],
   i18n: {
     locales: [
       { code: "en", iso: "en-US", name: "English" },
@@ -37,4 +38,7 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     vueI18n: "./i18n.config.ts",
   },
+  plugins: [
+    '~/plugins/emailjs.js'
+  ],
 });
