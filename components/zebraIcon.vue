@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="localePath('/')">
+  <nuxt-link :to="localePath('/')" @click="handleButtonClick">
     <img
       v-if="star"
       src="/zebraStar.png"
@@ -18,5 +18,9 @@
 defineProps({
     star: Boolean
 })
-
+const SoundStore = useSoundStore();
+const { playSound } = SoundStore; 
+const handleButtonClick = () => {
+  playSound("sound-3");
+};
 </script>

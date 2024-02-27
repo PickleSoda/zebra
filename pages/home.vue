@@ -9,17 +9,23 @@ const nav = [
   { title: "magazine", image: "magazine.png" },
   { title: "about", image: "question.png" },
 ]
-
+const SoundStore = useSoundStore();
+const { playSound } = SoundStore; 
+const handleNavClick = () => {
+  playSound("sound-3");
+};
 </script>
 
 <template>
   <div>
     <zebraHeader />
 
-    <div class="w-full z-20 lg:mb-16 ">
+
+    <NuxtLayout :name="layout">
       <NuxtLink
         :to="localePath('media')"
-        class="absolute w-60 h-36  mx-auto   right-1/2 transform translate-x-1/2"
+        class="absolute w-60 h-36  mx-auto   -top-40 lg:-top-32 xl:-top-20 left-1/2 max-xl:-translate-x-1/2 xl:-right-64  z-10"
+        @click="handleNavClick"
       >
         <tvContainer
           sm
@@ -32,9 +38,6 @@ const nav = [
           </div>
         </tvContainer>
       </NuxtLink>
-    </div>
-
-    <NuxtLayout :name="layout">
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         <HomeNav
           v-for="navitem in nav"
@@ -43,10 +46,13 @@ const nav = [
           :image="navitem.image"
           :title="navitem.title"
           :link="navitem.link || localePath(navitem.title)"
+          @click="handleNavClick"
         />
       </div>
+      <template #footer>
+          
+        <zebra-footer />
+      </template>
     </NuxtLayout>
-
-    <zebra-footer />
   </div>
 </template>

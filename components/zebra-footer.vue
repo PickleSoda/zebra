@@ -6,7 +6,7 @@
       </nuxt-link> <span class="px-2" />
       PRIVACY POLICY
     </h1>
-    <h1>@ACHI UGULAVA 2023 ZEBRA</h1>
+    <h1>@A.U. 2023 ZEBRA</h1>
   </div>
 </template>
 

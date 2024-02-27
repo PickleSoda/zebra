@@ -17,25 +17,12 @@ const toggleLangSwitcher = () =>{
       <div>
         <button
           type="button"
-          class="inline-flex justify-center w-full rounded-md  shadow-sm px-4 py-2 text-sm font-medium"
+          class="inline-flex justify-center w-full rounded-md  shadow-sm px-4 py-2 text-base font-medium"
           @click.prevent="toggleLangSwitcher"
         >
           <h1 class="">
             {{ locale.toLocaleUpperCase() }}
           </h1>
-          <svg
-            class="-mr-1 ml-2 h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 6a2 2 0 100-4 2 2 0 000 4zm0 8a2 2 0 100-4 2 2 0 000 4zm0 6a2 2 0 100-4 2 2 0 000 4z"
-              clip-rule="evenodd"
-            />
-          </svg>
         </button>
       </div>
 

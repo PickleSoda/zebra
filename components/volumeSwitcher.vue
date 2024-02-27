@@ -12,11 +12,11 @@ const toggleMute = () => {
 </script>
 
 <template>
-  <div class="absolute top-3 right-32 text-white cursor-pointer z-30">
+  <div class="absolute top-3 right-6 text-white cursor-pointer z-30">
     <button @click="toggleMute">
       <div
         v-if="isMuted"
-        class="text-white h-4 w-4 opacity-60"
+        class="text-white h-4 w-4 pt-1 opacity-60"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
