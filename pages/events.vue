@@ -84,7 +84,7 @@ const layout = "container";
         </tbody>
       </table>
       <template #footer>
-        <div class="flex flex-nowrap items-center justify-between -mt-20">
+        <div class="flex flex-nowrap items-center justify-between">
           <nuxt-link
             :to="localePath('/contact')"
             class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2 mb-10"
