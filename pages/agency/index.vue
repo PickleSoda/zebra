@@ -18,12 +18,12 @@ const handleButtonClick = () => {
     />
     <div class="grid grid-cols-3">
       <AgencyNav
-      @click="handleButtonClick"
         v-for="navitem in nav"
         :key="navitem.title"
         class="mx-auto"
         :title="navitem.title"
         :link="localePath(`/agency/${navitem.title}`)"
+        @click="handleButtonClick"
       />
     </div>
   </div>

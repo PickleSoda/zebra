@@ -1,17 +1,20 @@
+<script setup>
+const SoundStore = useSoundStore();
+const { playSound } = SoundStore; 
+const handleButtonClick = () => {
+  playSound("sound-2");
+};
+</script>
+
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full ">
-    <div class="pt-10 pl-10 text-white my-14">
-      <NuxtLink
-        :to="localePath('/home')"
-        class="w-fit p-5 bg-zinc-700 text-white text-xl md:text-2xl"
-      >
-        {{ $t('home') }}
-      </NuxtLink>
-    </div>
     <!-- <zebraHeader /> -->
-    <div class="flex flex-col items-center px-5">
+    <div class="flex flex-col items-start px-5">
+      <div class="pt-10 pl-10 text-white my-14">
+        <BackButton link="/home" />
+      </div>
       <div
-        class="text-white text-center text-4xl font-bold leading-10 max-w-[702px]"
+        class="text-white text-center text-4xl font-bold leading-10 w-full"
       >
         ABOUT
       </div>

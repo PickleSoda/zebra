@@ -6,18 +6,16 @@ const layout = "container";
 <template>
   <div>
     <div class="p-10">
-      <div class="absolute top-32 md:top-44 lg:top-20 left-10 translate-x-0 transform -translate-y-1/2 text-white">
-        <NuxtLink
-          :to="localePath('/home')"
-          class="w-fit p-3 lg:p-4  border-zebraBorder border-2 text-white text-xl md:text-2xl"
-        >
-          {{ $t('home') }}
-        </NuxtLink>
+      <div class="absolute top-36 md:top-44 lg:top-20  md:left-10 md:translate-x-0 left-1/2 -translate-x-1/2 transform -translate-y-1/2 text-white">
+        <BackButton link="/home" />
       </div>
       <eventsIcon />
     </div>
-    <NuxtLayout :name="layout">
-      <table class="table-auto w-full text-white font-base">
+    <NuxtLayout
+      :name="layout"
+      class="mt-32"
+    >
+      <table class="table-auto w-full text-white font-base space-y-5 ">
         <thead>
           <tr>
             <th class="text-white">
@@ -32,7 +30,7 @@ const layout = "container";
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="h-20">
             <td class="text-center">
               <svg
                 class="w-36 sm:w-48 mx-auto"
@@ -47,13 +45,13 @@ const layout = "container";
               </svg>
             </td>
             <td class="text-center">
-              Paris, France
+              Tbilisi, Gerogia
             </td>
             <td class="text-center">
-              TBA
+              03/14/24
             </td>
           </tr>
-          <tr>
+          <tr class="h-20">
             <td class="text-center">
               <img
                 class="w-36 sm:w-48 mx-auto"
@@ -62,16 +60,31 @@ const layout = "container";
               >
             </td>
             <td class="text-center">
-              Tbilis, Gerogia
+              Tbilisi, Gerogia
             </td>
             <td class="text-center">
-              2024-01-14
+              TBA
+            </td>
+          </tr>
+          <tr class="h-20">
+            <td class="text-center">
+              <img
+                class="w-36 sm:w-48 p-1 mx-auto"
+                src="/REBIRTH.png"
+                alt=""
+              >
+            </td>
+            <td class="text-center">
+              PARIS, FRANCE
+            </td>
+            <td class="text-center">
+              TBA
             </td>
           </tr>
         </tbody>
       </table>
       <template #footer>
-        <div class="flex flex-nowrap items-center justify-between mt-40">
+        <div class="flex flex-nowrap items-center justify-between -mt-20">
           <nuxt-link
             :to="localePath('/contact')"
             class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2 mb-10"

@@ -20,11 +20,19 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         // Include the Stalinist One font
         { href: 'https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap', rel: 'stylesheet' },
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
-      ],
-      // ... other head elements like meta tags
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+       ],
+            script: [
+              {
+                type: 'module',
+                src: 'https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js',
+              }
+            ],
+          
+            
+        },
+  
     },
-  },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", '@pinia/nuxt',],
   i18n: {
     locales: [

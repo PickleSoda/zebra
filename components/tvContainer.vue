@@ -1,15 +1,15 @@
 <script setup>
 defineProps({
-    image: {
-        type: String,
-        required: true,
-    },
-    sm: Boolean
+  image: {
+    type: String,
+    required: true,
+  },
+  sm: Boolean
 })
 </script>
 <template>
   <div
-    :class="sm ? 'w-60 h-36' : 'w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'"
+    :class="sm ? 'w-40 h-[98px] shadow-lg shadow-black' : 'w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'"
     :style="{ backgroundImage: image }"
     style="
  background-size: 100%;
@@ -22,7 +22,7 @@ background-repeat: no-repeat;
   >
     <div
       style="background-image: url('/tvz.png');  width: 100%;
-                height:100%; background-size: 100%;
+    height:100%; background-size: 100%;
     position: absolute;
     z-index: 0;
     pointer-events: none;

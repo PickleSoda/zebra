@@ -39,13 +39,13 @@ const toggleLangSwitcher = () =>{
           aria-labelledby="options-menu"
         >
           <NuxtLink
-            v-for="locale in availableLocales"
-            :key="locale.code"
-            :to="switchLocalePath(locale.code)"
+            v-for="available in availableLocales"
+            :key="available.code"
+            :to="switchLocalePath(available.code)"
             class="p-3 hover:bg-slate-700"
           >
             {{
-              locale.name 
+              available.name 
             }}
           </NuxtLink>
         </div>

@@ -2,7 +2,7 @@
 // You might choose this based on an API call or logged-in status
 const layout = "container";
 const nav = [
-  { title: "shop", image: "tee.png", link: 'https://shop.zebratbilisi.com/' },
+  { title: "shop", image: "tee.png", link: 'https://zebratbs.bigcartel.com/' },
   { title: "events", image: "events.png", },
   { title: "agency", image: "agency.png" },
   { title: "contact", image: "contact.png" },
@@ -17,14 +17,17 @@ const handleNavClick = () => {
 </script>
 
 <template>
-  <div>
+  <div class="lg:pt-20">
     <zebraHeader />
 
 
-    <NuxtLayout :name="layout">
+    <NuxtLayout
+      :name="layout"
+      class="max-xl:mt-24"
+    >
       <NuxtLink
         :to="localePath('media')"
-        class="absolute w-60 h-36  mx-auto   -top-40 lg:-top-32 xl:-top-20 left-1/2 max-xl:-translate-x-1/2 xl:-right-64  z-10"
+        class="absolute w-40 h-28  mx-auto -top-28 lg:-top-20 xl:-top-6 left-1/2 max-xl:-translate-x-1/2 xl:-right-[390px]  z-10"
         @click="handleNavClick"
       >
         <tvContainer
@@ -32,7 +35,7 @@ const handleNavClick = () => {
           image="url('/main.gif')"
         >
           <div class="w-full h-full flex items-center justify-center">
-            <h1 class="font-bold text-center p-4  max-w-min mx-auto text-white">
+            <h1 class="text-center text-lg  max-w-min mx-auto text-white font-extrabold">
               {{ $t('media') }}
             </h1>
           </div>
@@ -50,7 +53,6 @@ const handleNavClick = () => {
         />
       </div>
       <template #footer>
-          
         <zebra-footer />
       </template>
     </NuxtLayout>
