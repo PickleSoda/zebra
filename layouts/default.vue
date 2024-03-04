@@ -9,32 +9,38 @@
 
 
 <template>
-  <div
-    :class="backgroundClass"
-    class="w-full h-screen bg-zebraBackground font-mono filter-[url(#pixelate)] "
-  >
-    <LangSwitcher />
-    <VolumeSwitcher />
-    <div class="w-full mx-auto max-w-5xl">
-      <slot />
-    </div>
+  <div>
+    <div
+      class="zebra-gradient overflow-y-auto"
+    />
 
-    <audio
-      id="sound-1"
-      :src="bomboclatSound"
-    />
-    <audio
-      id="sound-2"
-      :src="classicHurtSound"
-    />
-    <audio
-      id="sound-3"
-      :src="gtaSanAndreasSound"
-    />
-    <audio
-      id="sound-4"
-      :src="plug"
-    />
+    <div
+      :class="backgroundClass"
+      class="absolute overflow-y-auto w-full h-screen bg-zebraBackground font-mono filter-[url(#pixelate)]"
+    >
+      <LangSwitcher />
+      <VolumeSwitcher />
+      <div class="w-full mx-auto max-w-5xl">
+        <slot />
+      </div>
+
+      <audio
+        id="sound-1"
+        :src="bomboclatSound"
+      />
+      <audio
+        id="sound-2"
+        :src="classicHurtSound"
+      />
+      <audio
+        id="sound-3"
+        :src="gtaSanAndreasSound"
+      />
+      <audio
+        id="sound-4"
+        :src="plug"
+      />
+    </div>
   </div>
 </template>
   
@@ -78,5 +84,25 @@ updateBackgroundClass(route.path);
     background-color: #1F684E;
     /* Specific color for routes under '/something' */
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .zebra-gradient{
+    content: '   ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    background:  linear-gradient(rgba(100, 100, 100, 0) 40%, rgba(56, 56, 56, 0.2) 60%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.10), rgba(2, 255, 2, 0.05), rgba(0,0,255,0.10));
+    z-index: 100000;
+    background-size: 100% 4px,6px 100%;
+    pointer-events: none;
+}
+
+
 </style>
   

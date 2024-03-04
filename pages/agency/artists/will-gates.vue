@@ -4,10 +4,14 @@
 
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full">
-    <zebraHeader />
+    <div
+      class="absolute top-0 left-10 lg:top-20  text-white"
+    >
+      <BackButton link="/agency/artists" />
+    </div>
     <div class="flex flex-col px-5 bg-green-60">
       <div
-        class="text-zinc-100 text-center text-3xl font-bold leading-[100px] self-center max-w-[1301px] max-md:max-w-full max-md:text-xl max-md:leading-10"
+        class="text-zinc-100 text-center text-3xl pt-32 md:text-[100px] font-bold leading-[100px] self-center max-w-[1301px] max-md:max-w-full max-md:text-xl max-md:leading-10"
       >
         WILL GATES
       </div>

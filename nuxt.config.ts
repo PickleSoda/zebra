@@ -13,40 +13,53 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-       link: [
+      link: [
         // Preconnect to Google Fonts
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
         // Preconnect to Google Fonts static domain with crossorigin attribute
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
-        // Include the Stalinist One font
-        { href: 'https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap', rel: 'stylesheet' },
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-       ],
-            script: [
-              {
-                type: 'module',
-                src: 'https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js',
-              }
-            ],
-          
-            
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "anonymous",
         },
-  
+        // Include the Stalinist One font
+        {
+          href: "https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap",
+          rel: "stylesheet",
+        },
+        { rel: "icon", type: "image/png", href: "/favicon.png" },
+      ],
+      script: [
+        {
+          type: "module",
+          src: "https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js",
+        },
+      ],
     },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", '@pinia/nuxt',],
+  },
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+    "@pinia/nuxt",
+    "@nuxtjs/seo",
+  ],
   i18n: {
     locales: [
       { code: "en", iso: "en-US", name: "English" },
-{ code: "fr", iso: "fr-FR", name: "Français" },
-{ code: "de", iso: "de-DE", name: "Deutsch" },
-{ code: "es", iso: "es-ES", name: "Español" },
-{ code: "ja", iso: "ja-JP", name: "日本語" },
+      { code: "fr", iso: "fr-FR", name: "Français" },
+      { code: "de", iso: "de-DE", name: "Deutsch" },
+      { code: "es", iso: "es-ES", name: "Español" },
+      { code: "ja", iso: "ja-JP", name: "日本語" },
     ],
     strategy: "prefix_except_default",
     defaultLocale: "en",
     vueI18n: "./i18n.config.ts",
   },
-  plugins: [
-    '~/plugins/emailjs.js'
-  ],
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || "https://zebratbilisi.ge",
+    name: "Zebra Tbilisi",
+    description: "ZEBRA, a creative agency founded in Tbilisi",
+  },
+
+  plugins: ["~/plugins/emailjs.js"],
 });

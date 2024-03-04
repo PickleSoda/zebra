@@ -1,9 +1,13 @@
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full">
-    <zebraHeader />
+    <div
+      class="absolute top-0 left-10 lg:top-20  text-white"
+    >
+      <BackButton link="/agency/artists" />
+    </div>
     <div class="flex flex-col items-center px-5">
       <div
-        class="text-zinc-100 text-center text-3xl font-bold leading-[100px] max-w-[1124px] max-md:max-w-full max-md:text-xl max-md:leading-10 max-w-xl"
+        class="text-zinc-100 text-center text-3xl pt-32 md:text-[100px] font-bold leading-[100px] max-w-[1124px] max-md:max-w-full max-md:text-xl max-md:leading-10 max-w-xl"
       >
         ECONTAKT
       </div>
@@ -11,7 +15,7 @@
         <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div class="flex flex-col items-stretch w-[47%] max-md:w-full max-md:ml-0">
             <div
-              class="flex-col shadow-md overflow-hidden relative flex min-h-[802px] grow items-center pt-10 pb-12 px-5 max-md:max-w-full max-md:mt-10"
+              class="flex-col shadow-md overflow-hidden relative flex grow items-center pt-10 pb-12 px-5 max-md:max-w-full max-md:mt-10"
             >
               <img
                 loading="lazy"

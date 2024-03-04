@@ -12,8 +12,9 @@ const layout = "tvz";
 
 <template>
   <NuxtLayout
+    :link="'/agency'"
     :name="layout"
-    image="url(' https://cdn.builder.io/api/v1/image/assets/TEMP/5f76eb0a-290b-4519-9e5a-0698f5c96ba2?apiKey=5f9aacd1fc62433cbe9b3f16f9505026&width=1600')"
+    image="url('/main.gif')"
   >
     <div class="py-20 px-20 md:px-40">
       <div

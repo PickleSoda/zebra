@@ -6,11 +6,17 @@
 // ]
 </script>
 
-<template>  
+<template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full">
-    <zebraHeader />
-    <div class="flex flex-col items-center px-5 mx-auto">
-      <div class="text-white text-xl md:text-6xl  font-bold leading-5 whitespace-nowrap">
+    <div class="p-10">
+      <div
+        class="absolute top-0 left-10 lg:top-20  text-white"
+      >
+        <BackButton link="/agency" />
+      </div>
+    </div>
+    <div class="flex flex-col items-center px-5 pt-10 mx-auto">
+      <div class="text-white text-4xl md:text-6xl  font-bold leading-5 whitespace-nowrap">
         ABOUT AGENCY
       </div>
       <div
@@ -53,7 +59,8 @@
           <ul>
             <li>
               FURTHERMORE, ZEBRA ACKNOWLEDGES THE DIVERSITY WITHIN THE ARTISTS THEY WORK WITH. SOME ARTISTS HAVE THEIR
-              OWN AGENCIES OR ARE RESIDENTS OF PARTICULAR CLUBS. FOR THEM, ZEBRA SERVES AS A GATEWAY TO CONNECT WITH THEIR
+              OWN AGENCIES OR ARE RESIDENTS OF PARTICULAR CLUBS. FOR THEM, ZEBRA SERVES AS A GATEWAY TO CONNECT WITH
+              THEIR
               EXISTING BOOKING AGENCIES, OFFERING A SEAMLESS COLLABORATION THAT RESPECTS AND ENHANCES THEIR PRE-EXISTING
               RELATIONSHIPS.
             </li>

@@ -42,9 +42,7 @@ const sendToZebra = () => {
 
 const SoundStore = useSoundStore();
 const { playSound } = SoundStore; 
-const handleButtonClick = () => {
-  playSound("sound-2");
-};
+
 </script>
 
 <template>
@@ -59,8 +57,8 @@ const handleButtonClick = () => {
       </NuxtLink> -->
       <BackButton link="/home" />
     </div>
-    <div class="relaative top-1/2 pt-20 w-full z-10 mx-auto max-w-5xl bg-zebraBackground pb-10">
-      <div class="mx-8 p-2 py-8 md:p-8 border-2 border-zebraBorder border-opacity-80 bg-[#333232]/40 shadow-md shadow-black rounded-lg">
+    <div class="relaative top-1/2 pt-4 w-full z-10 mx-auto max-w-4xl bg-zebraBackground pb-10">
+      <div class="mx-8 p-2 py-8 md:p-8 border-opacity-80 bg-[#2A2A2A] shadow-md rounded-lg">
         <h1 class="text-5xl text-white text-center pb-6 font-bold text-stroke">
           {{ $t('contact') }}
         </h1>
@@ -70,7 +68,7 @@ const handleButtonClick = () => {
           @submit.prevent="sendToZebra"
         >
           <div class="flex flex-nowrap grow gap-4">
-            <div class="bg-[#585353] rounded-lg p-3 h-12 w-28 text-center max-sm:hidden">
+            <div class="bg-[#585353] rounded-lg p-4 h-14 w-28 text-center max-sm:hidden">
               <label
                 for="from_name"
                 class="text-white font-bold"
@@ -82,12 +80,12 @@ const handleButtonClick = () => {
             <input
               v-model="contactForm.from_name"
               type="text"
-              class="bg-[#333232]/40 border-2 border-zebraBorder p-2 text-[#F2A0CD] shadow-inner shadow-black self-stretch w-full rounded-md sm:placeholder-transparent"
+              class="bg-[#333232]/40 border border-[#827A7A] p-4 text-[#F2A0CD] self-stretch w-full rounded-sm sm:placeholder-transparent"
               placeholder="email"
             >
           </div>
           <div class="flex flex-nowrap grow gap-4">
-            <div class="bg-[#585353] rounded-lg p-3 h-12 w-28 text-center max-sm:hidden">
+            <div class="bg-[#585353] rounded-lg p-4 h-14 w-28 text-center max-sm:hidden">
               <label
                 for="from_name"
                 class="text-white font-bold"
@@ -98,13 +96,13 @@ const handleButtonClick = () => {
             <input
               v-model="contactForm.subject"
               type="text"
-              class="bg-[#333232]/40 border-2 border-zebraBorder p-2 text-[#F2A0CD] shadow-inner shadow-black self-stretch w-full rounded-md sm:placeholder-transparent"
+              class="bg-[#333232]/40 border border-[#827A7A] p-4 text-[#F2A0CD] self-stretch w-full rounded-sm sm:placeholder-transparent"
 
               placeholder="subject"
             >
           </div>
           <div class="flex flex-nowrap grow gap-4">
-            <div class="bg-[#585353] rounded-lg p-3 h-12 w-28 text-center max-sm:hidden">
+            <div class="bg-[#585353] rounded-lg  p-4 h-14 w-28 text-center max-sm:hidden">
               <label
                 for="from_name"
                 class="text-white font-bold"
@@ -116,7 +114,7 @@ const handleButtonClick = () => {
               v-model="contactForm.message"
               cols="30"
               rows="8"
-              class="bg-[#333232]/40 border-2 border-zebraBorder  p-2 text-[#F2A0CD] shadow-inner shadow-black w-full rounded-md sm:placeholder-transparent"
+              class="bg-[#333232]/40 border border-[#827A7A]  p-4 text-[#F2A0CD] w-full rounded-sm sm:placeholder-transparent"
               placeholder="message"
             />
           </div>
@@ -159,7 +157,7 @@ const handleButtonClick = () => {
         </div>
       </div>
     </div>
-    <div class="relative transform translate-y-1/2 z-10 px-8 w-full max-w-5xl">
+    <div class="relative transform translate-y-1/2 z-10 w-full max-w-5xl">
       <zebra-footer />
     </div>
   </div>

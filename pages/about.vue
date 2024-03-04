@@ -1,10 +1,3 @@
-<script setup>
-const SoundStore = useSoundStore();
-const { playSound } = SoundStore; 
-const handleButtonClick = () => {
-  playSound("sound-2");
-};
-</script>
 
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full ">

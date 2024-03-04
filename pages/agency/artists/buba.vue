@@ -1,9 +1,13 @@
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full">
-    <zebraHeader />
     <div class="flex flex-col items-stretch px-5 bg-opacity-0">
       <div
-        class="text-zinc-100 text-center text-[200px] font-bold leading-[210px] self-center max-w-[2170px] max-md:text-4xl max-md:leading-10"
+        class="absolute top-0 left-10 lg:top-20  text-white"
+      >
+        <BackButton link="/agency/artists" />
+      </div>
+      <div
+        class="text-zinc-100 text-center text-[150px] mt-32 font-bold leading-[210px] self-center max-w-[2170px] max-md:text-3xl max-md:leading-10"
       >
         BUBA
       </div>

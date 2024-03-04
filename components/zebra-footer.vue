@@ -1,5 +1,7 @@
 <template>
-  <div class="text-center text-white text-xs">
+  <div 
+    class="text-center text-white text-xs"
+  >
     <h1>
       <nuxt-link :to="localePath('/termsnconditions')">
         TERMS AND CONDITIONS
@@ -9,4 +11,3 @@
     <h1>@A.U. 2023 ZEBRA</h1>
   </div>
 </template>
-

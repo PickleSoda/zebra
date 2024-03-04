@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="localePath('/')"
+    :to="localePath('/home')"
     @click="handleButtonClick"
   >
     <img

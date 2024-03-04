@@ -1,9 +1,13 @@
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full">
-    <zebraHeader />
+    <div
+      class="absolute top-0 left-10 lg:top-20  text-white"
+    >
+      <BackButton link="/agency/artists" />
+    </div>
     <div class="flex flex-col items-center px-5">
       <div
-        class="text-zinc-100 text-center text-4xl mt-24 font-bold leading-[210px] max-w-[2170px] max-md:max-w-full max-md:text-2xl max-md:leading-10"
+        class="text-zinc-100 text-center text-4xl 3xl pt-32 md:text-[100px] font-bold leading-[210px] max-w-[2170px] max-md:max-w-full max-md:text-2xl max-md:leading-10"
       >
         E7EVEN
       </div>

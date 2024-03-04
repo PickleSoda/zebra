@@ -1,8 +1,12 @@
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full">
-    <zebraHeader />
+    <div
+      class="absolute top-0 left-10 lg:top-20  text-white"
+    >
+      <BackButton link="/agency/artists" />
+    </div>
     <div class="flex flex-col px-5">
-      <div class="text-zinc-100 text-center text-4xl md:text-6xl font-bold leading-9">
+      <div class="text-zinc-100 text-center text-4xl3xl pt-32 md:text-[100px] font-bold leading-9">
         1K
       </div>
       <div class="self-stretch w-full -mr-5 mt-10 max-md:max-w-full max-md:mt-10">

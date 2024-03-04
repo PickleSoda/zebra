@@ -6,7 +6,9 @@ const layout = "container";
 <template>
   <div>
     <div class="p-10">
-      <div class="absolute top-36 md:top-44 lg:top-20  md:left-10 md:translate-x-0 left-1/2 -translate-x-1/2 transform -translate-y-1/2 text-white">
+      <div
+        class="absolute top-36 md:top-44 lg:top-20  md:left-10 md:translate-x-0 left-1/2 -translate-x-1/2 transform -translate-y-1/2 text-white"
+      >
         <BackButton link="/home" />
       </div>
       <eventsIcon />
@@ -18,13 +20,13 @@ const layout = "container";
       <table class="table-auto w-full text-white font-base space-y-5 ">
         <thead>
           <tr>
-            <th class="text-white">
+            <th class="text-white md:text-xl">
               {{ $t('upcomingEvents') }}:
             </th>
-            <th class="text-white">
+            <th class="text-white md:text-xl">
               {{ $t('location') }}:
             </th>
-            <th class="text-white">
+            <th class="text-white md:text-xl">
               {{ $t('date') }}:
             </th>
           </tr>
@@ -44,11 +46,11 @@ const layout = "container";
                 />
               </svg>
             </td>
-            <td class="text-center">
+            <td class="text-center md:text-xl">
               Tbilisi, Gerogia
             </td>
             <td class="text-center">
-              03/14/24
+              03/29/24
             </td>
           </tr>
           <tr class="h-20">
@@ -59,7 +61,7 @@ const layout = "container";
                 alt=""
               >
             </td>
-            <td class="text-center">
+            <td class="text-center md:text-xl">
               Tbilisi, Gerogia
             </td>
             <td class="text-center">
@@ -74,7 +76,7 @@ const layout = "container";
                 alt=""
               >
             </td>
-            <td class="text-center">
+            <td class="text-center md:text-xl">
               PARIS, FRANCE
             </td>
             <td class="text-center">
@@ -84,19 +86,30 @@ const layout = "container";
         </tbody>
       </table>
       <template #footer>
-        <div class="flex flex-nowrap items-center justify-between">
+        <div
+          class="flex flex-wrap items-center justify-center sm:justify-between sm:gap-10
+        "
+        >
           <nuxt-link
             :to="localePath('/contact')"
-            class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2 mb-10"
+            class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white text-center border-2 mb-10 min-w-[200px]"
           >
             {{ $t('contact') }}
           </nuxt-link>
-          <nuxt-link
-            to="https://shop.zebratbilisi.com/"
-            class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white border-2 mb-10"
+          <a
+            href="https://ra.co/promoters/133108"
+            target="_blank"
+            class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white text-center border-2 mb-10 min-w-[200px]"
+          >
+            RESINDENT ADVISOR
+          </a>
+          <a
+            target="_blank"
+            href="https://zebratbs.bigcartel.com/"
+            class="p-2 sm:p-4 border-zebraBorder border-opacity-20 rounded-sm text-white text-center border-2 mb-10 min-w-[200px]"
           >
             {{ $t('getYourTickets') }}
-          </nuxt-link>
+          </a>
         </div>
         <zebra-footer />
       </template>
