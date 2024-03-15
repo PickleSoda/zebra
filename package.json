@@ -30,6 +30,7 @@
     "@emailjs/browser": "^4.1.0",
     "@formkit/auto-animate": "^0.8.0",
     "@pinia/nuxt": "^0.5.1",
+    "@splinetool/runtime": "^1.0.64",
     "nuxt-config": "^1.0.1",
     "pinia": "^2.1.7"
   },

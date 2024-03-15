@@ -1,13 +1,22 @@
 <script setup>
 // You might choose this based on an API call or logged-in status
+import { Application } from '@splinetool/runtime';
+
+const splineCanvas = ref(null);
+
+onMounted(async () => {
+  const splineApp = new Application(splineCanvas.value);
+  await splineApp.load('/pubic/puestion_mark.spline');
+  // Additional setup or interaction with the Spline scene can go here
+});
 const layout = "container";
 const nav = [
-  { title: "shop", image: "tee.png", link: 'https://zebratbs.bigcartel.com/' },
-  { title: "events", image: "events.png", },
-  { title: "agency", image: "agency.png" },
-  { title: "contact", image: "contact.png" },
-  { title: "magazine", image: "magazine.png" },
-  { title: "about", image: "question.png" },
+  { title: "shop", image: "t-shirt-min.gif", link: 'https://zebratbs.bigcartel.com/' },
+  { title: "events", image: "333-min.gif", },
+  { title: "agency", image: "pyramid-v-1-min.gif" },
+  { title: "contact", image: "contact-min.gif" },
+  { title: "magazine", image: "star-min.gif" },
+  { title: "about", image: "question-mark-min.gif" },
 ]
 const SoundStore = useSoundStore();
 const { playSound } = SoundStore; 
@@ -19,7 +28,7 @@ const handleNavClick = () => {
 <template>
   <div class="lg:pt-20">
     <zebraHeader />
-
+    <canvas ref="splineCanvas"></canvas>
 
     <NuxtLayout
       :name="layout"

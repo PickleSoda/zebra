@@ -9,7 +9,7 @@
 
 
 <template>
-  <div>
+  <div @click="handleClick">
     <div
       class="zebra-gradient overflow-y-auto"
     />
@@ -71,6 +71,13 @@ watch(() => route.path, (newPath) => {
 
 // Initialize background class
 updateBackgroundClass(route.path);
+
+const SoundStore = useSoundStore();
+const { playSound } = SoundStore;
+
+const handleClick = () => {
+    playSound();
+};
 </script>
   
 <style>

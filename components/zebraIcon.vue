@@ -22,8 +22,8 @@ defineProps({
     star: Boolean
 })
 const SoundStore = useSoundStore();
-const { playSound } = SoundStore; 
+const { chooseSound } = SoundStore; 
 const handleButtonClick = () => {
-  playSound("sound-3");
+  chooseSound("3");
 };
 </script>

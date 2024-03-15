@@ -18,8 +18,8 @@ const props = defineProps({
     link: String,
 })
 const SoundStore = useSoundStore();
-const { playSound } = SoundStore; 
+const { chooseSound } = SoundStore; 
 const handleButtonClick = () => {
-  playSound("sound-2");
+  chooseSound("2");
 };
 </script>

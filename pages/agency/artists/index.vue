@@ -8,6 +8,13 @@ const nav = [
   { title: "1K", link: "/agency/artists/1k" },
 ]
 const layout = "tvz";
+const SoundStore = useSoundStore();
+const { chooseSound } = SoundStore; 
+
+
+const handleClick = () => {
+    chooseSound("4");
+};
 </script>
 
 <template>
@@ -28,6 +35,7 @@ const layout = "tvz";
         >
           <nuxt-link
             v-for="(item, index) in nav"
+            @click="handleClick"
             :key="index"
             :to="localePath(item.link)"
             class="text-white font-bold  text-lg md:text-2xl"
@@ -42,6 +50,7 @@ const layout = "tvz";
         >
           <nuxt-link
             v-for="(item, index) in nav"
+            @click="handleClick"
             :key="index"
             :to="localePath(item.link)"
             class="text-white font-bold  text-lg md:text-2xl"

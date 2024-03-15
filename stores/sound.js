@@ -2,27 +2,33 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 export const useSoundStore = defineStore('sound', () => {
     const isMuted = ref(false)
-    const sound = ref('assets/sounds/sound.mp3')
+    const sound = ref('sound-3')
 
     function toggleMute() {
         isMuted.value = !isMuted.value
     }
 
-    async function playSound(id) {
+    function chooseSound(s) {
+        sound.value = "sound-" + s
+        console.log(sound.value);
+    }
+
+    async function playSound() {
         if(!isMuted.value) {
 
-            let audio = document.getElementById(id);
+            let audio = document.getElementById(sound.value);
             console.log(audio);
             if (!audio) return;
             audio.currentTime = 0; 
             audio.volume = 1; 
             audio.play()
-            
+            chooseSound('3')
         }
         else {
             console.log('sound is muted');
         }   
     }
 
-    return { isMuted, sound, toggleMute, playSound }
+
+    return { isMuted, sound, toggleMute, playSound, chooseSound}
 })
