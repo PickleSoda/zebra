@@ -1,14 +1,4 @@
 <script setup>
-// You might choose this based on an API call or logged-in status
-import { Application } from '@splinetool/runtime';
-
-const splineCanvas = ref(null);
-
-onMounted(async () => {
-  const splineApp = new Application(splineCanvas.value);
-  await splineApp.load('/pubic/puestion_mark.spline');
-  // Additional setup or interaction with the Spline scene can go here
-});
 const layout = "container";
 const nav = [
   { title: "shop", image: "t-shirt-min.gif", link: 'https://zebratbs.bigcartel.com/' },
@@ -28,7 +18,6 @@ const handleNavClick = () => {
 <template>
   <div class="lg:pt-20">
     <zebraHeader />
-    <canvas ref="splineCanvas"></canvas>
 
     <NuxtLayout
       :name="layout"

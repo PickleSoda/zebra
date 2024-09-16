@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   devtools: { enabled: true },
   extends: ["nuxt-seo-kit"],
   runtimeConfig: {
@@ -60,6 +60,11 @@ export default defineNuxtConfig({
     name: "Zebra Tbilisi",
     description: "ZEBRA, a creative agency founded in Tbilisi",
   },
-
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
   plugins: ["~/plugins/emailjs.js"],
 });
