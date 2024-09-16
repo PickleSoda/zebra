@@ -91,6 +91,7 @@ const { playSound } = SoundStore;
               type="text"
               class="bg-[#333232]/40 border border-[#827A7A] p-4 text-[#F2A0CD] self-stretch w-full rounded-sm sm:placeholder-transparent"
               placeholder="email"
+              name="user_email"
             >
           </div>
           <div class="flex flex-nowrap grow gap-4">
@@ -106,7 +107,7 @@ const { playSound } = SoundStore;
               v-model="contactForm.subject"
               type="text"
               class="bg-[#333232]/40 border border-[#827A7A] p-4 text-[#F2A0CD] self-stretch w-full rounded-sm sm:placeholder-transparent"
-
+              name="subject"
               placeholder="subject"
             >
           </div>
@@ -124,6 +125,7 @@ const { playSound } = SoundStore;
               cols="30"
               rows="8"
               class="bg-[#333232]/40 border border-[#827A7A]  p-4 text-[#F2A0CD] w-full rounded-sm sm:placeholder-transparent"
+              name="message"  
               placeholder="message"
             />
           </div>
