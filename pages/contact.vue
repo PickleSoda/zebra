@@ -2,11 +2,18 @@
 // You might choose this based on an API call or logged-in status
 import emailjs from '@emailjs/browser';
 // const layout = "container";
-emailjs.init('SgCbnTmwr0L3R86JM');
+emailjs.init('bNbXSRU21_O6Q07Gp');
 
 const modal = ref(false);
+const error = ref(false);
 
-const toggleModal = () => {
+const toggleModal = ({err}) => {
+  if (err) {
+    playSound("sound-3");
+  } else {
+    playSound("sound-2");
+  }
+  error.value = err;
   modal.value = !modal.value;
 };
 
@@ -29,12 +36,14 @@ const sendToZebra = () => {
   playSound("sound-4");
   isSending.value = true;
   console.log("Sending to Zebra", contactFormForMail.value);
-  emailjs.sendForm('service_xeg8iiz', 'template_6eu3wte', contactFormForMail.value)
+  emailjs.sendForm('service_xu1v4vs', 'template_gjoq7pb', contactFormForMail.value)
     .then((result) => {
-      toggleModal();
+      toggleModal({err: false});
       isSending.value = false;
       console.log('Email sent successfully', result.text);
     }, (error) => {
+      toggleModal({err: true});
+
       isSending.value = false;
       console.log('Email failed to send', error.text);
     });
@@ -144,9 +153,13 @@ const { playSound } = SoundStore;
         v-if="modal"
         class="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-sm bg-[#737373] p-4 sm:p-10 min-w-fit"
       >
-        <h3 class="text-lg sm:text-2xl text-stroke text-white font-extrabold">
+        <h3 v-if="!error" class="text-lg sm:text-2xl text-stroke text-white font-extrabold">
           MESSAGE SENT TO ZEBRA
         </h3>
+        <h3 v-if="error" class="text-lg sm:text-2xl text-stroke text-white font-extrabold">
+          MESSAGE FAILED TO SEND
+        </h3>
+
         <div class="mx-auto w-min">
           <button
             class="text-[#F2A0CD] text-2xl font-bold text-stroke mx-auto"
