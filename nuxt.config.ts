@@ -71,38 +71,8 @@ export default defineNuxtConfig({
       crawlLinks: false,
       failOnError: false,
     },
-    rollupConfig: process.env.NODE_ENV === 'production' ? {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules/nitropack')) {
-            return 'nitropack';
-          }
-          if (id.includes('node_modules/@nuxtjs/sitemap')) {
-            return 'sitemap';
-          }
-        }
-      }
-    } : {},
   },
 
   plugins: ["~/plugins/emailjs.js"],
 
-  // Custom build configuration to handle chunking and circular dependencies
-  build: {
-    extend(config, { isDev, isClient }) {
-      if (!isDev && isClient) {
-        config.output = {
-          ...config.output,
-          manualChunks(id) {
-            if (id.includes('node_modules/nitropack')) {
-              return 'nitropack';
-            }
-            if (id.includes('node_modules/@nuxtjs/sitemap')) {
-              return 'sitemap';
-            }
-          }
-        };
-      }
-    },
-  },
 });
