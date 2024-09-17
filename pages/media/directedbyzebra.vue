@@ -19,7 +19,7 @@ console.log(videos);
         <div class="flex flex-row justify-center items-center gap-5 ">
 
           <h1 class="text-white font-bold text-3xl md:text-4xl sm:pt-5 md:pt-10">
-            {{ $t('videos') }}
+            {{ $t('directedbyzebra') }}
           </h1>
         </div>
         <div class="w-full flex flex-col justify-center items-center gap-5 md:gap-10">
