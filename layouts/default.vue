@@ -11,12 +11,12 @@
 <template>
   <div @click="handleClick">
     <div
-      class="zebra-gradient overflow-y-auto"
+      class="zebra-gradient overflow-y-none"
     />
 
     <div
       :class="backgroundClass"
-      class="absolute overflow-y-auto w-full h-screen bg-zebraBackground font-mono filter-[url(#pixelate)]"
+      class="overflow-y-auto w-full h-screen bg-zebraBackground font-mono filter-[url(#pixelate)]"
     >
       <LangSwitcher />
       <VolumeSwitcher />

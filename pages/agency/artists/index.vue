@@ -35,10 +35,10 @@ const handleClick = () => {
         >
           <nuxt-link
             v-for="(item, index) in nav"
-            @click="handleClick"
             :key="index"
             :to="localePath(item.link)"
             class="text-white font-bold  text-lg md:text-2xl"
+            @click="handleClick"
           >
             {{ item.title }}
           </nuxt-link>
@@ -50,10 +50,10 @@ const handleClick = () => {
         >
           <nuxt-link
             v-for="(item, index) in nav"
-            @click="handleClick"
             :key="index"
             :to="localePath(item.link)"
             class="text-white font-bold  text-lg md:text-2xl"
+            @click="handleClick"
           >
             {{ item.title }}
           </nuxt-link>

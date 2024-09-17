@@ -17,6 +17,7 @@ const layout = "container";
       :name="layout"
       class="mt-32"
     >
+      <YoutubePlayerBox />
       <table class="table-auto w-full text-white font-base space-y-5 ">
         <thead>
           <tr>

@@ -155,10 +155,16 @@ const { playSound } = SoundStore;
         v-if="modal"
         class="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-sm bg-[#737373] p-4 sm:p-10 min-w-fit"
       >
-        <h3 v-if="!error" class="text-lg sm:text-2xl text-stroke text-white font-extrabold">
+        <h3
+          v-if="!error"
+          class="text-lg sm:text-2xl text-stroke text-white font-extrabold"
+        >
           MESSAGE SENT TO ZEBRA
         </h3>
-        <h3 v-if="error" class="text-lg sm:text-2xl text-stroke text-white font-extrabold">
+        <h3
+          v-if="error"
+          class="text-lg sm:text-2xl text-stroke text-white font-extrabold"
+        >
           MESSAGE FAILED TO SEND
         </h3>
 
