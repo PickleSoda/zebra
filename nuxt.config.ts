@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
-  extends: ["nuxt-seo-kit"],
   
   runtimeConfig: {
     public: {
@@ -69,11 +68,10 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      crawlLinks: true,
+      crawlLinks: false,
       failOnError: false,
     },
-    // Adjust Rollup chunking to avoid circular dependencies
-    rollupConfig: {
+    rollupConfig: process.env.NODE_ENV === 'production' ? {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules/nitropack')) {
@@ -84,7 +82,7 @@ export default defineNuxtConfig({
           }
         }
       }
-    }
+    } : {},
   },
 
   plugins: ["~/plugins/emailjs.js"],
