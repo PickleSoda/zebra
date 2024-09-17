@@ -37,12 +37,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/i18n",
-    "@pinia/nuxt",
-    "@nuxtjs/seo",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@pinia/nuxt", "@nuxtjs/seo", "@nuxt/scripts"],
   i18n: {
     locales: [
       { code: "en", iso: "en-US", name: "English" },

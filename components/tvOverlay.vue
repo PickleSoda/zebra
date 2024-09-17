@@ -15,11 +15,12 @@ defineProps({
     <div
       style="background-image: url('/tvz.png');  width: 100vw;
     height:100vh; background-size: 100%;
-    z-index: 0;
+    z-index: 1000;
     pointer-events: none;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     overflow: visible;
+    position: absolute;
     "
     >
       <div class="absolute w-full h-full z-10">
