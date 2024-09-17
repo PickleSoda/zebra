@@ -3,14 +3,16 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
   extends: ["nuxt-seo-kit"],
+  
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://zebratbilisi.ge",
       siteName: "Zebra Tbilisi",
-      siteDescription: "Welcome to Zebra tblisi!",
+      siteDescription: "Welcome to Zebra Tbilisi!",
       language: "en", // prefer more explicit language codes like `en-AU` over `en`
     },
   },
+
   app: {
     head: {
       link: [
@@ -37,7 +39,15 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@pinia/nuxt", "@nuxtjs/seo", "@nuxt/scripts"],
+
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+    "@pinia/nuxt",
+    "@nuxtjs/seo",
+    "@nuxt/scripts"
+  ],
+
   i18n: {
     locales: [
       { code: "en", iso: "en-US", name: "English" },
@@ -50,16 +60,51 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     vueI18n: "./i18n.config.ts",
   },
+
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || "https://zebratbilisi.ge",
     name: "Zebra Tbilisi",
     description: "ZEBRA, a creative agency founded in Tbilisi",
   },
+
   nitro: {
     prerender: {
       crawlLinks: true,
       failOnError: false,
     },
+    // Adjust Rollup chunking to avoid circular dependencies
+    rollupConfig: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/nitropack')) {
+            return 'nitropack';
+          }
+          if (id.includes('node_modules/@nuxtjs/sitemap')) {
+            return 'sitemap';
+          }
+        }
+      }
+    }
   },
+
   plugins: ["~/plugins/emailjs.js"],
+
+  // Custom build configuration to handle chunking and circular dependencies
+  build: {
+    extend(config, { isDev, isClient }) {
+      if (!isDev && isClient) {
+        config.output = {
+          ...config.output,
+          manualChunks(id) {
+            if (id.includes('node_modules/nitropack')) {
+              return 'nitropack';
+            }
+            if (id.includes('node_modules/@nuxtjs/sitemap')) {
+              return 'sitemap';
+            }
+          }
+        };
+      }
+    },
+  },
 });
