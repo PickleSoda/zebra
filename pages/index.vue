@@ -5,7 +5,7 @@
       <div class="absolute top-1/2 trasnform translate-y-1/2 left-1/2 trasnform -translate-x-1/2">
         <NuxtLink
           :to="localePath('home')"
-          class="w-fit p-5 bg-zinc-700 text-white text-xl md:text-2xl center"
+          class="w-fit p-5 bg-zinc-700 text-white text-xl md:text-2xl center shadow-inner border-gray-500 border-4 border-b-gray-700 border-r-gray-600"
           @click.prevent="handleButtonClick"
         >
           {{ $t('start') }}
