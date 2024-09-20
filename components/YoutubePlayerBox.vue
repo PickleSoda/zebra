@@ -17,7 +17,8 @@ const updateWidth = () => {
   width.value = window.innerWidth;
 };
 
-onMounted(() => {
+onMounted(async() => {
+  updateWidth();
   window.addEventListener('resize', updateWidth);
 });
 
