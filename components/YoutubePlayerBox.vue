@@ -19,7 +19,7 @@ function stateChange(event) {
       <ScriptYouTubePlayer
         ref="video"
         :video-id="videoId"
-        class="h-60 md:h-80 lg:h-96  xl:h-[500px] border-2 border-[7F8672] focus:outline-none  sm:w-80"
+        class="h-60 md:h-80 lg:h-96  xl:h-[500px] border-2 border-[7F8672] focus:outline-none  w-80 sm:w-full"
         style="width: 100%;"
         @ready="isLoaded = true"
         @state-change="stateChange"
