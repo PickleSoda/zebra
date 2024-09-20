@@ -105,7 +105,7 @@ html {
     right: 0;
     background:  linear-gradient(rgba(100, 100, 100, 0) 40%, rgba(56, 56, 56, 0.2) 60%),
     linear-gradient(90deg, rgba(255, 0, 0, 0.10), rgba(2, 255, 2, 0.05), rgba(0,0,255,0.10));
-    z-index: 100000;
+    z-index: 1000;
     background-size: 100% 4px,6px 100%;
     pointer-events: none;
 }

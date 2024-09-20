@@ -8,9 +8,6 @@ defineProps({
 const isLoaded = ref(false)
 const isPlaying = ref(false)
 const video = ref()
-async function play() {
-    await video.value.player.playVideo()
-}
 function stateChange(event) {
     isPlaying.value = event.data === 1
 }
@@ -22,8 +19,7 @@ function stateChange(event) {
       <ScriptYouTubePlayer
         ref="video"
         :video-id="videoId"
-        class="h-60 md:h-80 lg:h-96  xl:h-[500px] border-2 border-[7F8672] focus:outline-none"
-        style="width: 100%;"
+        class="h-60 md:h-80 lg:h-96  xl:h-[500px] border-2 border-[7F8672] focus:outline-none w-full"
         @ready="isLoaded = true"
         @state-change="stateChange"
       >
