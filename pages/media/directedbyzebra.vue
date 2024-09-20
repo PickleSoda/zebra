@@ -2,7 +2,6 @@
 // You might choose this based on an API call or logged-in status
 import { videos } from '@/assets/content/directedbyzebra.js';
 const layout = "default";
-console.log(videos);
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 defineProps({
   videoId: {
     type: String,
@@ -11,6 +11,31 @@ const video = ref()
 function stateChange(event) {
     isPlaying.value = event.data === 1
 }
+const width = ref(0);
+
+const updateWidth = () => {
+  width.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWidth);
+});
+
+const divStyle = computed(() => {
+  if (width.value < 500) {
+    return {
+      width: '320px',
+    };
+  } else {
+    return {
+      width: '100%',
+    };
+  }
+});
 </script>
 
 <template>
@@ -19,8 +44,8 @@ function stateChange(event) {
       <ScriptYouTubePlayer
         ref="video"
         :video-id="videoId"
-        class="h-60 md:h-80 lg:h-96  xl:h-[500px] border-2 border-[7F8672] focus:outline-none  w-80 sm:w-full"
-        style="width: 100%;"
+        class="h-60 md:h-80 lg:h-96  xl:h-[500px] border-2 border-[7F8672] focus:outline-none w-full"
+        :style="divStyle"
         @ready="isLoaded = true"
         @state-change="stateChange"
       >

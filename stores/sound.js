@@ -10,14 +10,12 @@ export const useSoundStore = defineStore('sound', () => {
 
     function chooseSound(s) {
         sound.value = "sound-" + s
-        console.log(sound.value);
     }
 
     async function playSound() {
         if(!isMuted.value) {
 
             let audio = document.getElementById(sound.value);
-            console.log(audio);
             if (!audio) return;
             audio.currentTime = 0; 
             audio.volume = 1; 
