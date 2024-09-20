@@ -11,7 +11,7 @@
 <template>
   <div @click="handleClick">
     <div
-      class="zebra-gradient overflow-y-none"
+      class="zebra-gradient overflow-y-hidden"
     />
 
     <div

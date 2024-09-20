@@ -17,7 +17,7 @@ console.log(videos);
     </h1>
     <tvOverlay image="url('/media.gif')" />
     <div
-      class="absolute w-full h-[calc(100%-165px)] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-20 overflow-hidden"
+      class="absolute w-full h-[calc(100%-165px)] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-20 overflow-scroll"
     >
       <div class="overflow-y-scroll h-full">
         <div class="flex flex-row justify-center items-center gap-5 ">
