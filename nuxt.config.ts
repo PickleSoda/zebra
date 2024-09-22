@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
-  
+
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://zebratbilisi.ge",
@@ -37,6 +37,8 @@ export default defineNuxtConfig({
         },
       ],
     },
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "layout", mode: "out-in" },
   },
 
   modules: [
@@ -44,7 +46,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@pinia/nuxt",
     "@nuxtjs/seo",
-    "@nuxt/scripts"
+    "@nuxt/scripts",
   ],
 
   i18n: {
@@ -74,5 +76,4 @@ export default defineNuxtConfig({
   },
 
   plugins: ["~/plugins/emailjs.js"],
-
 });

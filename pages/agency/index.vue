@@ -11,7 +11,7 @@ const handleButtonClick = () => {
 };
 </script>
 <template>
-  <div class="pt-20">
+  <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full max-w-6xl px-2 pt-0 pb-30">
     <zebraHeader
       class="pb-40"
       star

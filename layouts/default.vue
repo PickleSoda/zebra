@@ -20,7 +20,7 @@
     >
       <LangSwitcher />
       <VolumeSwitcher />
-      <div class="w-full mx-auto max-w-5xl">
+      <div class="w-full mx-auto max-w-6xl">
         <slot />
       </div>
 

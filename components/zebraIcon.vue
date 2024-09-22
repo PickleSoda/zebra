@@ -7,11 +7,11 @@
       v-if="star"
       src="/zebraStar.png"
       alt=""
-      class="max-w-sm mx-auto md:max-w-6xl h-[400px] w-full"
+      class="w-full"
     > 
     <img
       v-else
-      class="max-w-sm mx-auto p-10 md:max-w-3xl w-full"
+      class="w-full"
       src="/zebraIcon.png"
       alt="Zebra Icon"
     >

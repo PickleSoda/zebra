@@ -17,7 +17,9 @@ const handleNavClick = () => {
 
 <template>
   <div class="lg:pt-20">
-    <zebraHeader />
+    <div class="p-4 pb-10">
+      <zebraHeader />
+    </div>
 
     <NuxtLayout
       :name="layout"

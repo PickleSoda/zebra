@@ -4,7 +4,10 @@
 <template>
   <div>
     <div class="pt-10 pl-10 text-white">
-      <NuxtLink :to="localePath('/home')" class="w-fit p-5 border-zebraBorder border-2 text-white text-xl md:text-2xl">
+      <NuxtLink
+        :to="localePath('/home')"
+        class="w-fit p-5 border-zebraBorder border-2 text-white text-xl md:text-2xl"
+      >
         {{ $t('home') }}
       </NuxtLink>
     </div>
@@ -15,14 +18,12 @@
         </h1>
         <h3 class="text-lg text-zebraBorder">
           What information ZEBRA collects
-
         </h3>
         <p class="p-2 text-sm">
           ZEBRA collects personal data from visitors to the website who register their information. We also use web
           statistics tools so we can improve our services and enhance your online experience. ZEBRA does not collect
           personally identifiable information from anyone under the age of eighteen. Please do not submit any personal
           details if you are under eighteen.
-
         </p>
         <h3 class="text-lg text-zebraBorder">
           How ZEBRA uses information you provide
@@ -32,11 +33,9 @@
           administer our website services. We will send you announcements or communications by email only if you give us
           your permission by submitting your personal details. Otherwise, we use your information only to review our
           performance and to improve our services to you.
-
         </p>
         <h3 class="text-lg pt-2 text-zebraBorder">
           Does ZEBRA share your information with others?
-
         </h3>
         <p class="p-2 text-sm">
           ZEBRA does not sell, rent or disclose our client's names, addresses, email addresses or other personal
@@ -48,11 +47,9 @@
           We do not otherwise disclose your information to third parties, unless required by law or in connection with a
           legal claim or proceeding. If ZEBRA is acquired by another entity, information about Zebratbilisi.com clients
           may be made available to the new entity.
-
         </p>
         <h3 class="text-lg pt-2 text-zebraBorder">
           About security
-
         </h3>
         <p class="p-2 text-sm">
           zebratbilisi.com uses appropriate security measures to protect the information you give us. However, while we

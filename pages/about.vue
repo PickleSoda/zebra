@@ -1,7 +1,6 @@
 
 <template>
   <div class=" absolute top-0 bottom-0 left-0 rignt-0 overflow-y-scroll w-full ">
-    <!-- <zebraHeader /> -->
     <div class="flex flex-col items-start px-5">
       <div class="pt-10 pl-10 text-white my-14">
         <BackButton link="/home" />
