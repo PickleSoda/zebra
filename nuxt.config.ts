@@ -40,13 +40,27 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
   },
-
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false, 
+    },
+  ],
+  content: {
+    // Enable custom components for MDX support
+    markdown: {
+      remarkPlugins: [],
+      rehypePlugins: [],
+      remarkMdx: true,
+    },
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
     "@pinia/nuxt",
     "@nuxtjs/seo",
     "@nuxt/scripts",
+    "@nuxt/content",
   ],
 
   i18n: {

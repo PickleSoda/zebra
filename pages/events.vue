@@ -83,6 +83,7 @@ const layout = "container";
               TBA
             </td>
           </tr>
+          
         </tbody>
       </table>
       <template #footer>
