@@ -15,17 +15,14 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        // Preconnect to Google Fonts
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
-        // Preconnect to Google Fonts static domain with crossorigin attribute
         {
           rel: "preconnect",
           href: "https://fonts.gstatic.com",
           crossorigin: "anonymous",
         },
-        // Include the Stalinist One font
         {
-          href: "https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Jersey+10&family=Stalinist+One&display=swap",
           rel: "stylesheet",
         },
         { rel: "icon", type: "image/png", href: "/favicon.png" },

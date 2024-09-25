@@ -14,7 +14,9 @@ export default {
         zebraBorder: "#8E6B8ECC",
       },
       fontFamily: {
-        stalinist: ['"Stalinist One"', 'sans-serif'] // Ensure to give a fallback font
+        stalinist: ['"Stalinist One"', 'sans-serif'],
+        jersey: ['"Jersey 10"', 'sans-serif']
+        
       }
     },
   },

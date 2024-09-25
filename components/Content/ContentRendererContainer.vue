@@ -20,8 +20,14 @@ const components = {
     <h1 class="text-4xl font-bold leading-10">
       {{ data?.title }}
     </h1>
-    <ContentRenderer :value="data" v-if="data">
-      <ContentRendererMarkdown :value="data" :components="components"/>
+    <ContentRenderer
+      v-if="data"
+      :value="data"
+    >
+      <ContentRendererMarkdown
+        :value="data"
+        :components="components"
+      />
     </ContentRenderer>
   </div>
 </template>

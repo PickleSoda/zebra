@@ -17,11 +17,20 @@ const layout = "container";
       </div>
       <eventsIcon />
     </div>
-    <NuxtLayout :name="layout" class="mt-32">
+    <NuxtLayout
+      :name="layout"
+      class="mt-32"
+    >
       <div class="space-y-10">
         <!-- Upcoming Events -->
-        <EventTable :events="pastEvents" :title="$t('pastEvents')" />
-        <EventTable :events="upcomingEvents" :title="$t('upcomingEvents')" />
+        <EventTable
+          :events="pastEvents"
+          :title="$t('pastEvents')"
+        />
+        <EventTable
+          :events="upcomingEvents"
+          :title="$t('upcomingEvents')"
+        />
 
         <!-- Past Events -->
       </div>
