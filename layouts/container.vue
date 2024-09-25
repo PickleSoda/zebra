@@ -6,7 +6,7 @@
         <slot />
       </div>
     </div>
-    <div class="relative -bottom-20 transform  z-10  px-4 md:px-8 w-full max-w-5xl">
+    <div class="relative -bottom-20 transform  z-10  px-4 md:px-8 w-full max-w-6xl">
       <slot name="footer" />
     </div>
   </div>

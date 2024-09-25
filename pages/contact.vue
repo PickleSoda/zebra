@@ -178,7 +178,7 @@ const { playSound } = SoundStore;
         </div>
       </div>
     </div>
-    <div class="relative transform translate-y-1/2 z-10 w-full max-w-5xl">
+    <div class="relative transform translate-y-1/2 z-10 w-full max-w-6xl">
       <zebra-footer />
     </div>
   </div>
