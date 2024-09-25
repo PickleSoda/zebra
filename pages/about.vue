@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 const { data } = await useAsyncData('privacyPolicy', () => queryContent('en', 'about').findOne())
 </script>
 

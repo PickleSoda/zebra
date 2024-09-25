@@ -45,24 +45,23 @@ console.log("nav:", navigation)
         <div
           class="w-full flex-col justify-center items-center gap-5 md:gap-4 rounded-lg border-gray-200/70 border p-3 mb-1 flex h-96 lg:h-[500px] overflow-y-scroll"
         >
-          <nuxt-link
-            v-for="(item, index) in nav"
-            :key="index"
-            :to="localePath(item.link)"
-            class="text-white font-bold text-lg md:text-5xl"
-            @click="handleClick"
-          >
-            {{ item.title }}
-          </nuxt-link>
-          <nuxt-link
-            v-for="(item, index) in nav"
-            :key="index"
-            :to="localePath(item.link)"
-            class="text-white font-bold text-lg md:text-5xl"
-            @click="handleClick"
-          >
-            {{ item.title }}
-          </nuxt-link>
+          <nav>
+            <ContentNavigation>
+              <ul>
+                <li
+                  v-for="link of navigation"
+                  :key="link._path"
+                >
+                  <NuxtLink
+                    :to="link._path"
+                    class="text-white font-bold text-lg md:text-5xl"
+                  >
+                    {{ link.title }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </ContentNavigation>
+          </nav>
         </div>
       </div>
     </div>

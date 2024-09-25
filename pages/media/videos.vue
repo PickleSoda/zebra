@@ -5,7 +5,7 @@ const layout = "default";
 </script>
 
 <template>
-  <NuxtLayout :name="layout">
+  <div>
     <h1 class="p-5 absolute top-0 left-10 z-[10000]">
       <nuxt-link
         :to="localePath('/media/')"
@@ -35,5 +35,5 @@ const layout = "default";
         </div>
       </div>
     </div>
-  </NuxtLayout>
+  </div>
 </template>

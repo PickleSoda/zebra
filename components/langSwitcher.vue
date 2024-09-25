@@ -20,7 +20,7 @@ const toggleLangSwitcher = () =>{
           class="inline-flex justify-center w-full rounded-md  shadow-sm px-4 py-2 text-base font-medium"
           @click.prevent="toggleLangSwitcher"
         >
-          <h1 class="">
+          <h1 class="text-xl">
             {{ locale.toLocaleUpperCase() }}
           </h1>
         </button>

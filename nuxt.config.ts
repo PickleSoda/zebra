@@ -58,6 +58,7 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@nuxt/scripts",
     "@nuxt/content",
+    "@nuxt/image"
   ],
 
   i18n: {
