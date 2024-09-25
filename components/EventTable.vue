@@ -54,7 +54,10 @@ const props = defineProps<{
               >{{ event.name }}</h1>
             </a>
           </td>
-          <td class="text-center md:text-xl" :class="`text[${event.color}]`">
+          <td
+            class="text-center md:text-xl"
+            :class="`text[${event.color}]`"
+          >
             {{ event.location }}
           </td>
           <td class="text-center">

@@ -1,16 +1,7 @@
-<script setup lang="ts">
-definePageMeta({
-  pageTransition: {
-    name: 'bounce',
-    mode: 'out-in'
-  },
-  layoutTransition: false
-})
+<script setup>
 </script>
-
-
 <template>
-  <NuxtLayout>
+  <div>
     <h1 class="p-5 absolute top-0 left-10 z-[10000]">
       <nuxt-link
         :to="localePath('/home')"
@@ -40,5 +31,5 @@ definePageMeta({
         </nuxt-link>
       </h1>
     </div>
-  </NuxtLayout>
+  </div>
 </template>

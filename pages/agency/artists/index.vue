@@ -7,52 +7,58 @@ const nav = [
   { title: "E7EVEN", link: "/agency/artists/e7even" },
   { title: "1K", link: "/agency/artists/1k" },
 ]
-const layout = "tvz";
 const SoundStore = useSoundStore();
-const { chooseSound } = SoundStore; 
+const { chooseSound } = SoundStore;
 
 
 const handleClick = () => {
-    chooseSound("4");
-};
-</script>
+  chooseSound("4");
+}
+const query = queryContent({
+  where: {
+    _path: { $contains: '/en/agency/artists' }
+  }
+})
 
+
+const navigation = await query.find();
+console.log("nav:", navigation)
+</script>
 <template>
-  <NuxtLayout
-    :link="'/agency'"
-    :name="layout"
-    image="url('/main.gif')"
-  >
-    <div class="py-20 px-20 md:px-40">
-      <div
-        class="w-full flex flex-col justify-center items-center gap-5 md:gap-4  bg-gray-600/40 rounded-xl border-gray-300/60 border p-3 max-w-xs mx-auto md:max-w-6xl"
+  <div>
+    <h1 class="p-5 absolute top-0 left-10 z-[10000]">
+      <nuxt-link
+        :to="localePath('/home')"
+        class="text-white font-bold text-3xl md:text-4xl "
       >
-        <h1 class="text-white font-bold  text-2xl md:text-3xl">
+        {{ $t('back') }}
+      </nuxt-link>
+    </h1>
+    <tvOverlay image="url('/main.gif')" />
+    <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+      <div
+        class="flex flex-col justify-center items-center gap-5 md:gap-4 bg-gray-600/40 rounded-xl border-gray-300/60 border p-3 md:w-[500px] lg:w-[800px] w-72"
+      >
+        <h1 class="text-white font-bold text-2xl md:text-6xl">
           ARTISTS
         </h1>
         <div
-          class="w-full flex-col justify-center items-center gap-5 md:gap-4 rounded-lg border-gray-200/70 border p-3 mb-1 hidden md:flex"
+          class="w-full flex-col justify-center items-center gap-5 md:gap-4 rounded-lg border-gray-200/70 border p-3 mb-1 flex h-96 lg:h-[500px] overflow-y-scroll"
         >
           <nuxt-link
             v-for="(item, index) in nav"
             :key="index"
             :to="localePath(item.link)"
-            class="text-white font-bold  text-lg md:text-2xl"
+            class="text-white font-bold text-lg md:text-5xl"
             @click="handleClick"
           >
             {{ item.title }}
           </nuxt-link>
-        </div>
-      </div>
-      <div class="absolute md:hidden top-1/2 -translate-y-1/3 left-0  w-full p-10">
-        <div
-          class="flex  flex-col justify-center items-center gap-5 md:gap-4 rounded-lg bg-gray-600/40 border-gray-200/70 border p-3 mb-1"
-        >
           <nuxt-link
             v-for="(item, index) in nav"
             :key="index"
             :to="localePath(item.link)"
-            class="text-white font-bold  text-lg md:text-2xl"
+            class="text-white font-bold text-lg md:text-5xl"
             @click="handleClick"
           >
             {{ item.title }}
@@ -60,5 +66,5 @@ const handleClick = () => {
         </div>
       </div>
     </div>
-  </NuxtLayout>
+  </div>
 </template>
